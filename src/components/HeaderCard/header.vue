@@ -19,35 +19,11 @@
         <div class="card__img">
             <img src="../../assets/me.jpeg" alt="profile picture">
         </div>
+        <p>Have a cup of coffee: <font-awesome-icon icon="coffee" /></p>
+    <p>Have a cup of coffee: <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></p>
+    <p>Have a cup of coffee: <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></p>
+    <p>Have a cup of coffee: <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github-square' }" /></p>
     </div>
-    <!-- <div class="card">
-        <div class=" card__content row featurette">
-            <div class="col-sm-7 order-sm-2">
-                <div class="card__info">
-                    <h1 class="card__heading">Elizabeth Setton</h1>
-                    <h4>Frontend developer</h4>
-                    <hr>
-                    <div>
-                        <dl class="dlList">
-                            <dt class="dlList__dt">Age</dt>
-                            <dd class="dlList__dd">22</dd>
-                            <dt class="dlList__dt">Phone</dt>
-                            <dd class="dlList__dd">+972 (58) 7471315</dd>
-                            <dt class="dlList__dt">Email</dt>
-                            <dd class="dlList__dd">Lizasali123@gmail.com</dd>
-                            <dt class="dlList__dt">Address</dt>
-                            <dd class="dlList__dd">Tel-Aviv, Israel</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-5 order-sm-1">
-                <div class=" card__img">
-                    <img src="../../assets/me.jpeg" alt="profile picture">
-                </div>
-            </div>
-        </div>
-    </div> -->
 </template>
 <script>
 export default {
@@ -59,20 +35,19 @@ export default {
 .card {
     grid-row: 2 / 4;
     grid-column: 2 / 4;
-    border-radius: 2rem;
+
     display: grid;
     grid-template-columns: 1fr 23rem max-content 1fr;
     grid-template-rows: 1fr 23rem 1fr; 
     grid-row-gap: 2.2rem;
     grid-column-gap: 3rem;
+
     font-size: 1.5rem;
-    
-    // justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
 
     &__heading {
-        // margin: 2rem;
         text-transform: uppercase;
-        // margin-bottom: 1rem !important;
         letter-spacing: 0.1rem;
     }
     &__info {
@@ -83,14 +58,8 @@ export default {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
     }
-    // &__content {
-    //     padding: 0 1.4rem !important;
-    // }
 }
 
-// .col-sm-7, .col-sm-5 {
-//     padding: 0 1.3rem !important;
-// }
 img {
     width: 100%;
     height: 100%;
@@ -98,7 +67,6 @@ img {
 }
 
 .dlList {
-    
     &__dd {
         margin-bottom: 0.8rem !important;
     }
@@ -115,6 +83,7 @@ img {
 h4,{
     margin-bottom: 1.2rem !important;
     letter-spacing: 0.1rem;
+    // border-bottom: 1px solid red;
 }
 </style>
 

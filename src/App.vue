@@ -2,15 +2,22 @@
   <div class="layoutGrid">
     <div class="coverImg"></div>
     <app-header></app-header>
+    <app-info-projects></app-info-projects>
+    <app-gallery-projects></app-gallery-projects>
   </div>
 </template>
 
 <script>
   import header from './components/HeaderCard/header.vue'
+  import infoProjects from './components/infoProjects/infoProjects.vue'
+  import galleryProjects from './components/galleryProjects/galleryProjects.vue'
+
   export default {
     name: 'app',
     components: {
-      'app-header': header
+      'app-header': header,
+      'app-info-projects': infoProjects,
+      'app-gallery-projects': galleryProjects
     }
 }
 </script>
@@ -28,17 +35,16 @@ html {
 body {
   box-sizing: border-box !important;
   font-family: "Lato", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem !important;
   line-height: 1.7 !important;
+  // background-color: #efeeab;
 
 }
 .layoutGrid {
-  // display: grid;
-  // grid-template-rows: 80vh min-content 40vw repeat(3,min-content);
-  // grid-template-columns: [sidebar-start ]8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   display: grid;
-  grid-template-rows: 10vh 50vh 10vh;
+  grid-template-rows: 10vh 50vh 10vh 10vh 80vh 10vh 129vh 10vh ;
   grid-template-columns: 20vw 30vw 30vw 20vw;
 }
 
