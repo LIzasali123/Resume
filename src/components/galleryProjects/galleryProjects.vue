@@ -8,14 +8,78 @@
             <p class="projectGal__icon">icon to git</p> 
             <button class="projectGal__button">View Project</button>
         </div>
-        <div class="projectGal__project">2</div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+         <div class="projectGal__project">
+            <div class="projectGal__img">
+                <img src="../../assets/project.jpeg"  alt="project img">
+            </div>
+            <p class="projectGal__heading">Yelp camp</p>
+            <p class="projectGal__icon">icon to git</p> 
+            <button class="projectGal__button">View Project</button>
+        </div>
+        <!-- <div class="projectGal__project">2</div>
         <div class="projectGal__project">3</div>
         <div class="projectGal__project">4</div>
         <div class="projectGal__project">5</div>
         <div class="projectGal__project">6</div>
         <div class="projectGal__project">7</div>
         <div class="projectGal__project">8</div>
-        <div class="projectGal__project">9</div>
+        <div class="projectGal__project">9</div> -->
         <!-- <div class="card">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
@@ -42,19 +106,19 @@ export default {
         grid-column: 1 / 5;
         
         display: grid;
-        grid-template-columns: repeat(3, 27rem);
-        grid-template-rows: repeat(3, 27rem);
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
+        // grid-template-rows: repeat(3, 27rem);
         justify-content: center;
-        grid-gap: 3rem;
+        grid-gap: 4rem;
+        background-color: #f9f7f6;
 
         &__project {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             // grid-template-rows: 20rem repeat(2, 1fr);
             grid-gap: 1rem;
-
-            background-color: white;
             border-radius: 3%;
+            background-color: white;
             box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
         }
         &__img {
@@ -83,4 +147,5 @@ export default {
             display: flex;
         }
     }
+
 </style>

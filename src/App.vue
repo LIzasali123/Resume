@@ -4,6 +4,11 @@
     <app-header></app-header>
     <app-info-projects></app-info-projects>
     <app-gallery-projects></app-gallery-projects>
+    <app-gallery-diploma></app-gallery-diploma>
+    <app-info-diploma></app-info-diploma>
+    <app-skills></app-skills>
+    <app-info-personal></app-info-personal>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -11,13 +16,23 @@
   import header from './components/HeaderCard/header.vue'
   import infoProjects from './components/infoProjects/infoProjects.vue'
   import galleryProjects from './components/galleryProjects/galleryProjects.vue'
+  import galleryDiploma from './components/galleryDiploma/galleryDiploma.vue'
+  import infoDiploma from './components/infoDiploma/infoDiploma.vue'
+  import skills from './components/skills/skills.vue'
+  import infoPersonal from './components/infoPersonal/infoPersonal.vue'
+  import footer from './components/footer/footer.vue'
 
   export default {
     name: 'app',
     components: {
       'app-header': header,
       'app-info-projects': infoProjects,
-      'app-gallery-projects': galleryProjects
+      'app-gallery-projects': galleryProjects,
+      'app-gallery-diploma': galleryDiploma,
+      'app-info-diploma': infoDiploma,
+      'app-skills': skills,
+      'app-info-personal': infoPersonal,
+      'app-footer': footer
     }
 }
 </script>
@@ -44,12 +59,12 @@ body {
 }
 .layoutGrid {
   display: grid;
-  grid-template-rows: 10vh 50vh 10vh 10vh 80vh 10vh 129vh 10vh ;
+  grid-template-rows: 10vh 50vh 10vh 10vh 80vh 10vh 130vh 10vh 100vh 100vh 40vh;
   grid-template-columns: 20vw 30vw 30vw 20vw;
 }
 
 .coverImg {
-    background-image: url(./assets/cover2.jpeg);
+    background-image: url(./assets/cover3.jpeg);
     background-size: cover;
     background-position: 0 90%;
     background-repeat: no-repeat;

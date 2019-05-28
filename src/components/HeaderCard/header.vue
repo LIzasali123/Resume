@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card__info">
             <h1 class="card__heading">Elizabeth Setton</h1>
-            <h4>Frontend developer</h4>
+            <h4>Frontend Developer</h4>
             <div>
                 <dl class="dlList">
                     <dt class="dlList__dt">Age</dt>
@@ -15,14 +15,15 @@
                     <dd class="dlList__dd">Tel-Aviv, Israel</dd>
                 </dl>
             </div>
+            <div class="icons">
+                <a class="icons__link"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></a>
+                <a class="icons__link"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
+                <a class="icons__link"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+            </div>
         </div>
         <div class="card__img">
             <img src="../../assets/me.jpeg" alt="profile picture">
         </div>
-        <p>Have a cup of coffee: <font-awesome-icon icon="coffee" /></p>
-    <p>Have a cup of coffee: <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></p>
-    <p>Have a cup of coffee: <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></p>
-    <p>Have a cup of coffee: <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github-square' }" /></p>
     </div>
 </template>
 <script>
@@ -42,7 +43,7 @@ export default {
     grid-row-gap: 2.2rem;
     grid-column-gap: 3rem;
 
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 1rem;
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
 
@@ -53,10 +54,24 @@ export default {
     &__info {
         grid-row: 2 / 3;
         grid-column: 3 / 4;
+
+        display: grid;
     }
     &__img {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
+    }
+}
+.icons {
+    align-self: end;
+    height: 2.8rem;
+
+    &__link {
+        margin-right: 1rem !important;
+    }
+    &__font {
+        width: 2.5rem !important;
+        height: 3rem;
     }
 }
 
@@ -67,6 +82,7 @@ img {
 }
 
 .dlList {
+    font-size: 1.2rem;
     &__dd {
         margin-bottom: 0.8rem !important;
     }
