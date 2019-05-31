@@ -1,95 +1,122 @@
 <template> 
-    <div class="projectGal">
-        <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+        <div class="projectGal">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project1.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae? </p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-         <div class="projectGal__project">
-            <div class="projectGal__img">
-                <img src="../../assets/project.jpeg"  alt="project img">
+            <div class="projectGal__project">
+                <div class="projectGal__img">
+                    <img src="../../assets/project3.png"  alt="project img">
+                </div>
+                <div class="projectGal__info">
+                    <div class="projectGal__heading">
+                        <p class="projectGal__heading--name">Yelp camp</p>
+                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                    </div>
+                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
+                </div>
+                <button class="projectGal__button">View Project</button>
             </div>
-            <p class="projectGal__heading">Yelp camp</p>
-            <p class="projectGal__icon">icon to git</p> 
-            <button class="projectGal__button">View Project</button>
-        </div>
-        <!-- <div class="projectGal__project">2</div>
-        <div class="projectGal__project">3</div>
-        <div class="projectGal__project">4</div>
-        <div class="projectGal__project">5</div>
-        <div class="projectGal__project">6</div>
-        <div class="projectGal__project">7</div>
-        <div class="projectGal__project">8</div>
-        <div class="projectGal__project">9</div> -->
-        <!-- <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div> -->
     </div>
     
 </template>
@@ -102,50 +129,83 @@ export default {
 
 <style lang="scss">
     .projectGal {
-        grid-row: 7 / 8;
-        grid-column: 1 / 5;
-        
+        grid-row: 8 / 9;
+        grid-column: 2 / 6;
         display: grid;
         grid-template-columns: repeat(3, minmax(10rem, 1fr));
-        // grid-template-rows: repeat(3, 27rem);
+        grid-template-rows: repeat(3, min-content);
         justify-content: center;
         grid-gap: 4rem;
-        background-color: #f9f7f6;
+        margin: 5rem 0 !important; 
+        // padding: 3rem !important;
 
+        &__icon {
+            width: 2.5rem !important;
+            height: 3rem;
+            color: #a691b6;
+            margin-right: 1rem !important;
+            transition: all .3s;
+
+            &:hover {
+                color: #c9cfe5;
+                transform: scale(1.2);
+            }
+
+            &--link {
+                outline: none;
+            }
+        }
         &__project {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            // grid-template-rows: 20rem repeat(2, 1fr);
+            grid-template-rows: min-content 1fr min-content;
             grid-gap: 1rem;
             border-radius: 3%;
-            background-color: white;
+            background-color: #f9f7f6;
             box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
         }
         &__img {
-            grid-column: 1 / -1;
-            grid-row: 1 / 2;
-
-            padding: 1rem;
             width: 100%;
-            height: 20rem;;
-            z-index: 1;
+            height: 100%;
+            background-size: cover;
+            background-position: 0 14%;
+            background-repeat: no-repeat;
+            position: relative;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
 
         }
         &__button {
-            grid-column: 1 / -1;
-
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            font-weight: 200;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
             border: none;
-            background-color: #acaa90;
+            background-color: #a397b7;
+            color: white;
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+            height: 3.5rem;
+
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: #c9cfe5;
+            }
+        }
+        &__info {
+            display: flex;
+            flex-flow: column;
         }
         &__heading {
-            display: flex;   
-        }
-        &__icon {
+            margin-left: 1rem !important;
             display: flex;
+            justify-content: space-between;
+            font-size: 1.9rem;
+            color: #6f506f;
+
+            &--par {
+                font-size: 1.3rem;
+                margin: 0 1rem !important;
+            }
         }
     }
-
 </style>

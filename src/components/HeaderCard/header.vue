@@ -1,7 +1,7 @@
 <template>
-    <div class="card">
-        <div class="card__info">
-            <h1 class="card__heading">Elizabeth Setton</h1>
+    <div class="idcard card">
+        <div class="idcard__info">
+            <h1 class="idcard__heading">Elizabeth Setton</h1>
             <h4>Frontend Developer</h4>
             <div>
                 <dl class="dlList">
@@ -16,13 +16,13 @@
                 </dl>
             </div>
             <div class="icons">
-                <a class="icons__link"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></a>
-                <a class="icons__link"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
-                <a class="icons__link"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+                <a class="icons__link" href="https://www.facebook.com/profile.php?id=100000319325615"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></a>
+                <a class="icons__link" href="https://www.linkedin.com/feed/"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
+                <a class="icons__link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
             </div>
         </div>
-        <div class="card__img">
-            <img src="../../assets/me.jpeg" alt="profile picture">
+        <div class="idcard__img">
+            <img class="idcard__img--img" src="../../assets/me.jpeg" alt="profile picture">
         </div>
     </div>
 </template>
@@ -33,9 +33,9 @@ export default {
 </script>
 
 <style lang="scss">
-.card {
+.idcard {
     grid-row: 2 / 4;
-    grid-column: 2 / 4;
+    grid-column: 3 / 5;
 
     display: grid;
     grid-template-columns: 1fr 23rem max-content 1fr;
@@ -60,25 +60,37 @@ export default {
     &__img {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
+
+        &--img {
+            border-radius:3%;
+        }
     }
 }
 .icons {
     align-self: end;
     height: 2.8rem;
 
-    &__link {
-        margin-right: 1rem !important;
-    }
     &__font {
         width: 2.5rem !important;
         height: 3rem;
+        color: #c9cfe5;
+        transition: all .3s;
+
+        &:hover {
+            color: #a691b6;
+            transform: scale(1.2);
+        }
     }
+    &__link:link {
+        margin-right: 1rem !important;
+        outline: none;
+    }   
 }
 
 img {
     width: 100%;
     height: 100%;
-    border-radius:3%;
+    border-radius: inherit;
 }
 
 .dlList {
@@ -91,15 +103,16 @@ img {
         float: left;
         clear: left;
         width: 9rem;
-        font-weight: 400;
+        font-weight: 700;
         text-transform: uppercase;
+        color: #6f506f;
     }
 }
 
 h4,{
     margin-bottom: 1.2rem !important;
     letter-spacing: 0.1rem;
-    // border-bottom: 1px solid red;
+    border-bottom: 1px solid #c9cfe5;
 }
 </style>
 
