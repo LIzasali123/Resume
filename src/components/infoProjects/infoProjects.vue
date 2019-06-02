@@ -22,9 +22,9 @@ export default {
         grid-row: 5 / 7;
         grid-column: 3 / 5;
 
-        font-size: 1.3rem;
+        font-size: $font-size-small;
         border-radius: 1rem;
-        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
+        box-shadow: $general-box-shadow;
 
     }
 </style>

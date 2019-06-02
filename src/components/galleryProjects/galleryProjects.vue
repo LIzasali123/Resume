@@ -142,12 +142,12 @@ export default {
         &__icon {
             width: 2.5rem !important;
             height: 3rem;
-            color: #a691b6;
+            color: $color-purple-dark;
             margin-right: 1rem !important;
             transition: all .3s;
 
             &:hover {
-                color: #c9cfe5;
+                color: $color-purple-light;
                 transform: scale(1.2);
             }
 
@@ -161,7 +161,7 @@ export default {
             grid-gap: 1rem;
             border-radius: 3%;
             background-color: #f9f7f6;
-            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
+            box-shadow: $general-box-shadow;
         }
         &__img {
             width: 100%;
@@ -178,7 +178,7 @@ export default {
             font-weight: 500;
             letter-spacing: 0.1rem;
             border: none;
-            background-color: #a397b7;
+            background-color: $color-purple-lighter;
             color: white;
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
@@ -188,7 +188,7 @@ export default {
                 outline: none;
             }
             &:hover {
-                background-color: #c9cfe5;
+                background-color: $color-purple-light;
             }
         }
         &__info {
@@ -199,11 +199,11 @@ export default {
             margin-left: 1rem !important;
             display: flex;
             justify-content: space-between;
-            font-size: 1.9rem;
-            color: #6f506f;
+            font-size: $font-size-big;
+            color: $color-heading;
 
             &--par {
-                font-size: 1.3rem;
+                font-size: $font-size-small;
                 margin: 0 1rem !important;
             }
         }

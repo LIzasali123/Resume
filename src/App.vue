@@ -63,7 +63,7 @@ body {
 }
 .layoutGrid {
   display: grid;
-  grid-template-rows: 10vh 40vh 10vh 10vh 10vh 100vh 10vh min-content 5vh 40vh 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 20vh 5vh;
+  grid-template-rows: 10vh 40vh 10vh 10vh 10vh 100vh 10vh min-content 5vh 50vh 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 20vh 5vh;
   grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
 }
 

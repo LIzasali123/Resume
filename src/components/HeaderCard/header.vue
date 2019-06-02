@@ -43,9 +43,9 @@ export default {
     grid-row-gap: 2.2rem;
     grid-column-gap: 3rem;
 
-    font-size: 1.3rem;
+    font-size: $font-size-small;
     border-radius: 1rem;
-    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: $general-box-shadow;
 
     &__heading {
         text-transform: uppercase;
@@ -73,11 +73,11 @@ export default {
     &__font {
         width: 2.5rem !important;
         height: 3rem;
-        color: #c9cfe5;
+        color: $color-purple-light;
         transition: all .3s;
 
         &:hover {
-            color: #a691b6;
+            color: $color-purple-dark;
             transform: scale(1.2);
         }
     }
@@ -105,14 +105,14 @@ img {
         width: 9rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: #6f506f;
+        color: $color-heading;
     }
 }
 
 h4,{
     margin-bottom: 1.2rem !important;
     letter-spacing: 0.1rem;
-    border-bottom: 1px solid #c9cfe5;
+    border-bottom: $color-border;
 }
 </style>
 
