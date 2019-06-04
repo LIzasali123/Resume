@@ -58,12 +58,12 @@ body {
   font-weight: 400;
   font-size: 1.6rem !important;
   line-height: 1.7 !important;
-  background-color: #f9f7f6;
+  background-color: $color-background;
 
 }
 .layoutGrid {
   display: grid;
-  grid-template-rows: 10vh 40vh 10vh 10vh 10vh 100vh 10vh min-content 5vh 50vh 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 20vh 5vh;
+  grid-template-rows: 10vh 40vh 10vh 10vh 10vh 100vh 10vh min-content 5vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 20vh 5vh;
   grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
 }
 

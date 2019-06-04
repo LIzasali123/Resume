@@ -160,7 +160,7 @@ export default {
             grid-template-rows: min-content 1fr min-content;
             grid-gap: 1rem;
             border-radius: 3%;
-            background-color: #f9f7f6;
+            background-color: $color-background;
             box-shadow: $general-box-shadow;
         }
         &__img {
