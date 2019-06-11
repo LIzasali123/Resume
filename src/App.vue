@@ -63,8 +63,16 @@ body {
 }
 .layoutGrid {
   display: grid;
-  grid-template-rows: 10vh 40vh 10vh 10vh 10vh 100vh 10vh min-content 5vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 20vh 5vh;
+  grid-template-rows: 10vh 40vh 10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
   grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
+
+  @include respond(tab-land) {
+    grid-template-columns: 5vw 5vw 40vw 40vw 5vw 5vw;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: 1vw 1vw 48vw 48vw 1vw 1vw;
+    grid-template-rows: 10vh min-content  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+  }
 }
 
 .coverImg {
@@ -78,21 +86,21 @@ body {
 }
 .bgcolor {
   &--infoProjects{
-    background-color: #c9cfe5;
+    background-color: $color-purple-light;
     grid-row: 3 / 6;
     grid-column: 1 / 7;
     z-index: -1;
   }
-  &--footer {
-    grid-column: 1 / 7;
-    grid-row: 18 / 21;
-    background-image: linear-gradient(to right bottom, rgba(201, 207, 229, 0.7), rgba(168, 151, 183, 0.4)), url(./assets/cover16.jpg);
-    background-size: cover;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: -1;
-  }
+  // &--footer {
+  //   grid-column: 1 / 7;
+  //   grid-row: 18 / 21;
+  //   // background-image: linear-gradient(to right bottom, rgba(201, 207, 229, 0.7), rgba(168, 151, 183, 0.4)), url(./assets/cover16.jpg);
+  //   background-size: cover;
+  //   background-position: 0 50%;
+  //   background-repeat: no-repeat;
+  //   position: relative;
+  //   z-index: -1;
+  // }
 }
 
 </style>

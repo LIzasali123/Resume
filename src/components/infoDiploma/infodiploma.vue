@@ -1,40 +1,12 @@
 <template>
     <div class="infoDiploma">
-        <div class="gallery__elem">
-            <div class="gallery__elem__item"
-                @mouseover="hover = true"
-                @mouseout="hover = false"
-                v-bind:class="{grow1: hover}">1</div>
-            <div class="gallery__elem__item"
-                @mouseover="show = true"
-                @mouseout="show = false"
-                v-bind:class="{grow2: show}">2</div>
-            <div class="gallery__elem__item"
-                @mouseover="hover = true"
-                @mouseout="hover = false"
-                v-bind:class="{grow3: hover, grow3: show}">3</div>
-            <div class="gallery__elem__item"
-                @mouseover="hover = true"
-                @mouseout="hover = false"
-                v-bind:class="{grow4: hover}">4</div>
-
-            <div @mouseover="hover = true"
-                @mouseleave="hover = false"
-                v-bind:class="{grow: hover}">
-                Toggle
-            </div>
-            <div>
-                <p></p>
-            </div>
-            <!-- <p class="sali" v-if>lizaaaa</p> -->
-            <!-- <transition name="grow"> -->
-
-<!-- <div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
-This will always apply errorClass, but will only apply activeClass when isActive is truthy. -->
-                <div>
-                    <p v-bind:class="{grow: hover}">hello</p>
-                </div>
-            <!-- </transition> -->
+        <div class="leeran">
+            <h1 class="leeran__heading">Hello</h1>
+            <p class="leeran__paragraph">
+                I am a self learner web developer.
+                I strive for aesthetic design and implementation with cutting edge technology.
+                Clean and soft design is my passion, and I achieve it using web design, graphic design, and water coloring.
+            </p>
         </div>
     </div>    
 </template>
@@ -53,44 +25,20 @@ export default {
 
 <style lang="scss">
     .infoDiploma {
-        grid-column: 1 / 7;
-        grid-row: 12 / 13;
-        background-color: paleturquoise;
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
     }
-    .grow {
+    .leeran {
+        margin: 3rem 0 !important;
+        text-align: center;
 
-        // transition: all .9s;
-        color: white;
-    }
-    .grow1 {
-        // transition: all .9s;
-        color: blue;
-    }
-    .grow2 {
-        // transition: all .9s;
-        color: green;
-        transform: scale(1.2);
-    }
-    .grow3 {
-        // transition: all .9s;
-        color: orange;
-    }
-    .grow4 {
-        // transition: all .9s;
-        color: pink;
-    }
-    .gallery__elem {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        transition: all .9s;
-
-        &__item {
-            height: 6rem;
-            width: 6rem;
-            background-color: red;
-            transition: all .9s;
+        &__heading {
+            margin-bottom: 1.5rem !important;
         }
+        &__paragraph{
+            font-size: $font-size-small;
+        }
+
     }
 </style>
 

@@ -2,7 +2,7 @@
     <div class="idcard card">
         <div class="idcard__info">
             <h1 class="idcard__heading">Elizabeth Setton</h1>
-            <h4>Frontend Developer</h4>
+            <h4 class="idcard__heading--second">Frontend Developer</h4>
             <div>
                 <dl class="dlList">
                     <dt class="dlList__dt">Age</dt>
@@ -42,14 +42,22 @@ export default {
     grid-template-rows: 1fr 23rem 1fr; 
     grid-row-gap: 2.2rem;
     grid-column-gap: 3rem;
-
-    font-size: $font-size-small;
+    font-size: $font-size-medium;
     border-radius: 1rem;
     box-shadow: $general-box-shadow;
 
     &__heading {
         text-transform: uppercase;
         letter-spacing: 0.1rem;
+
+        @include respond(tab-land) {
+            font-size: $font-size-big;
+            letter-spacing: 0.3rem;
+            margin-bottom: 0.2rem !important;
+        }
+        @include respond(phone-big) {
+            font-size: $font-size-medium;
+        }
     }
     &__info {
         grid-row: 2 / 3;
@@ -63,6 +71,45 @@ export default {
 
         &--img {
             border-radius:3%;
+        }
+    }
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 18rem max-content 1fr;
+        grid-template-rows: 1fr 18rem 1fr; 
+    }
+    @include respond(phone-big) {
+        grid-template-columns: 1fr 15rem max-content 1fr;
+        grid-template-rows: 1fr 15rem 1fr; 
+    }
+    @include respond(phone-medium) {
+        grid-template-columns: 1fr 13rem max-content 1fr;
+        grid-template-rows: 2vh 13rem 2vh; 
+    }
+    @include respond(phone-small) {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh;
+        grid-gap: 0;
+        // &__heading {
+        //     grid-column: 2 / 3;
+        //     grid-row: 1 / 2;
+
+        //     &--second {
+        //         grid-column: 2 / 3;
+        //         grid-row: 2 / 3;
+        //     }
+        // }
+        &__info {
+            display: inline;
+            grid-column: 2 / 3;
+            grid-row: 1 / 6;
+        }
+        &__img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+
+            &--img {
+                border-radius:50%;
+            }
         }
     }
 }
@@ -80,11 +127,19 @@ export default {
             color: $color-purple-dark;
             transform: scale(1.2);
         }
+        @include respond(tab-land) {
+            width: 2rem !important;
+            height: 2.5rem;
+        }
+        @include respond(phone-medium) {
+            width: 1.5rem !important;
+            height: 1.5rem;
+        }
     }
     &__link:link {
         margin-right: 1rem !important;
         outline: none;
-    }   
+    }  
 }
 
 img {
@@ -94,9 +149,13 @@ img {
 }
 
 .dlList {
-    font-size: 1.2rem;
+    font-size: $font-size-medium;
     &__dd {
         margin-bottom: 0.8rem !important;
+
+        @include respond(phone-big) {
+            margin-bottom: 0.3rem !important;
+        }
     }
     &__dt {
         margin-bottom: 0.8rem !important;
@@ -106,6 +165,18 @@ img {
         font-weight: 700;
         text-transform: uppercase;
         color: $color-heading;
+
+        @include respond(phone-big) {
+            margin-bottom: 0.3rem !important;
+            width: 6rem;
+        }
+    }
+    @include respond(tab-land) {
+        font-size: $font-size-smallest;
+    }
+    @include respond(phone-small) {
+        grid-row: 4 / 6;
+        grid-column: 1 / -1;
     }
 }
 
@@ -113,6 +184,13 @@ h4,{
     margin-bottom: 1.2rem !important;
     letter-spacing: 0.1rem;
     border-bottom: $color-border;
+
+    @include respond(phone-big) {
+        font-size: $font-size-smallest;
+    }
+    @include respond(phone-medium) {
+        margin-bottom: 0.5rem !important;
+    }
 }
 </style>
 
