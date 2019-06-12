@@ -132,8 +132,8 @@ export default {
             height: 2.5rem;
         }
         @include respond(phone-medium) {
-            width: 1.5rem !important;
-            height: 1.5rem;
+            width: 2.2rem !important;
+            height: 2.2rem;
         }
     }
     &__link:link {

@@ -275,6 +275,15 @@ export default {
             grid-template-rows: repeat(4, min-content);
             grid-gap: 1rem;
             margin: 0 auto !important;
+
+            &__diploma {
+                &__info {
+                    font-size: $font-size-smallest;
+                    &__name {
+                        font-size: $font-size-small;
+                    }
+                }
+            }
             &__radio {
                 display: none;
             }
@@ -316,13 +325,16 @@ export default {
             }
         }
         @include respond(phone-small) {
-            grid-template-columns: min-content;
+            grid-template-columns: 100%;
             grid-template-rows: repeat(8, min-content);
-            grid-gap: 1rem;
+            grid-gap: 0.8rem;
             margin: 0 auto !important;
-            // &__radio {
-            //     display: none;
-            // }
+
+            &__diploma {
+                &__info {
+                    margin-bottom: 1.5rem !important;
+                }
+            }
 
             &--1 {
                 grid-column: 1 / -1;

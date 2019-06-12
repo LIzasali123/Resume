@@ -215,8 +215,26 @@ export default {
             &__project:last-child {
                 transform: translateX(57%);
             }
-        }
+        
         @include respond(phone-medium) {
+            &__heading {
+                font-size: $font-size-small;
+                &--par {
+                    font-size: $font-size-smallest;
+                }
+            }
+
+            &__icon {
+                width: 2.2rem !important;
+                height: 2.2rem;
+            }   
+            &__button {
+                font-weight: normal;     
+                font-size: $font-size-small;
+                height: 2.5rem;
+            }
+        }
+        @include respond(phone-small) {
             grid-template-columns: 100%;
             grid-template-rows: repeat(9, min-content);
 
@@ -224,6 +242,7 @@ export default {
                 transform: none;
             }
         }
-        
     }
+        
+}
 </style>
