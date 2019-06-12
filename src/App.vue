@@ -70,7 +70,7 @@ body {
     grid-template-columns: 5vw 5vw 40vw 40vw 5vw 5vw;
   }
   @include respond(tab-port) {
-    grid-template-columns: 1vw 1vw 48vw 48vw 1vw 1vw;
+    grid-template-columns: 2vw 2vw 46vw 46vw 2vw 2vw;
     grid-template-rows: 10vh min-content  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
   }
 }

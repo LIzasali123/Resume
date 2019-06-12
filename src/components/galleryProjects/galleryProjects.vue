@@ -207,5 +207,23 @@ export default {
                 margin: 0 1rem !important;
             }
         }
+        @include respond(tab-port) {
+            grid-column: 3 / 5;
+            grid-template-columns: repeat(2, minmax(10rem, 1fr));
+            grid-template-rows: repeat(5, min-content);
+
+            &__project:last-child {
+                transform: translateX(57%);
+            }
+        }
+        @include respond(phone-medium) {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(9, min-content);
+
+            &__project:last-child {
+                transform: none;
+            }
+        }
+        
     }
 </style>

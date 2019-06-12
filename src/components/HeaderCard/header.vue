@@ -42,7 +42,7 @@ export default {
     grid-template-rows: 1fr 23rem 1fr; 
     grid-row-gap: 2.2rem;
     grid-column-gap: 3rem;
-    font-size: $font-size-medium;
+    font-size: $font-size-small;
     border-radius: 1rem;
     box-shadow: $general-box-shadow;
 
@@ -56,7 +56,7 @@ export default {
             margin-bottom: 0.2rem !important;
         }
         @include respond(phone-big) {
-            font-size: $font-size-medium;
+            font-size: $font-size-small;
         }
     }
     &__info {
@@ -85,33 +85,33 @@ export default {
         grid-template-columns: 1fr 13rem max-content 1fr;
         grid-template-rows: 2vh 13rem 2vh; 
     }
-    @include respond(phone-small) {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh;
-        grid-gap: 0;
-        // &__heading {
-        //     grid-column: 2 / 3;
-        //     grid-row: 1 / 2;
+    // @include respond(phone-small) {
+    //     grid-template-columns: 50% 50%;
+    //     grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh;
+    //     grid-gap: 0;
+    //     // &__heading {
+    //     //     grid-column: 2 / 3;
+    //     //     grid-row: 1 / 2;
 
-        //     &--second {
-        //         grid-column: 2 / 3;
-        //         grid-row: 2 / 3;
-        //     }
-        // }
-        &__info {
-            display: inline;
-            grid-column: 2 / 3;
-            grid-row: 1 / 6;
-        }
-        &__img {
-            grid-column: 1 / 2;
-            grid-row: 1 / 3;
+    //     //     &--second {
+    //     //         grid-column: 2 / 3;
+    //     //         grid-row: 2 / 3;
+    //     //     }
+    //     // }
+    //     &__info {
+    //         display: inline;
+    //         grid-column: 2 / 3;
+    //         grid-row: 1 / 6;
+    //     }
+    //     &__img {
+    //         grid-column: 1 / 2;
+    //         grid-row: 1 / 3;
 
-            &--img {
-                border-radius:50%;
-            }
-        }
-    }
+    //         &--img {
+    //             border-radius:50%;
+    //         }
+    //     }
+    // }
 }
 .icons {
     align-self: end;
@@ -149,7 +149,7 @@ img {
 }
 
 .dlList {
-    font-size: $font-size-medium;
+    font-size: $font-size-small;
     &__dd {
         margin-bottom: 0.8rem !important;
 
@@ -174,10 +174,10 @@ img {
     @include respond(tab-land) {
         font-size: $font-size-smallest;
     }
-    @include respond(phone-small) {
-        grid-row: 4 / 6;
-        grid-column: 1 / -1;
-    }
+    // @include respond(phone-small) {
+    //     grid-row: 4 / 6;
+    //     grid-column: 1 / -1;
+    // }
 }
 
 h4,{
