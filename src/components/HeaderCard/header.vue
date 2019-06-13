@@ -15,7 +15,7 @@
                     <dt class="idcard__card__info__list--dt">Phone</dt>
                     <dd class="idcard__card__info__list--dd">+972 (58) 7471315</dd>
                     <dt class="idcard__card__info__list--dt">Email</dt>
-                    <dd class="idcard__card__info__list--dd">Lizasali123@gmail.com</dd>
+                    <dd class="idcard__card__info__list--dd">ElizabethSetton@gmail.com</dd>
                     <dt class="idcard__card__info__list--dt">Address</dt>
                     <dd class="idcard__card__info__list--dd">Tel-Aviv, Israel</dd>
                 </dl>
@@ -51,8 +51,8 @@ export default {
         grid-row-gap: 1rem;
         grid-column-gap: 3rem;
         font-size: $font-size-small;
-        border-radius: 1rem;
         box-shadow: $general-box-shadow;
+        border-radius: inherit;
 
         @include respond(tab-port) {
             grid-template-columns: 1fr 20rem max-content 1fr;
@@ -65,8 +65,8 @@ export default {
             grid-row-gap: 0.5rem;
         }
         @include respond(phone-small) {
-            grid-template-columns: 0.5rem  4rem 4rem max-content 0.5rem;
-            grid-template-rows: 0.5rem min-content min-content min-content min-content 0.5rem; 
+            grid-template-columns: 1fr  max-content 1fr;
+            grid-template-rows: 1rem min-content min-content min-content min-content 1rem; 
             grid-row-gap: 1rem;
             grid-column-gap: 1rem;
         }
@@ -77,8 +77,14 @@ export default {
             grid-row: 2 / 5;
 
             @include respond(phone-small) {
-                grid-column: 2 / 4;
-                grid-row: 2 / 4;
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+                margin: 0 auto !important;
+                width: 8rem;
+                height: 8rem;
+                &--img {
+                    border-radius: 100%;
+                }
             }
             &--img {
                 border-radius: 3%;
@@ -95,9 +101,10 @@ export default {
                 padding: 0 3rem 0 0 !important;
             }
             @include respond(phone-small) {
-                grid-column: 4 / 5;
-                grid-row: 2 / 3;
-                padding: 0 0 0 0 !important;
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+                padding: 0 1rem 0 1rem !important;
+                text-align: center;
             }
             &--primary {
                 font-size: $font-size-big;
@@ -136,9 +143,12 @@ export default {
             grid-column: 3 / 4;
             grid-row: 3 / 4;
             @include respond(phone-small) {
-                grid-column: 4 / 5;
-                grid-row: 3 / 5;
-                // transform: translateX(-50%);
+                grid-column: 2 / 3;
+                grid-row: 4 / 5;
+                justify-content: center;
+            }
+            @include respond(phone-small) {
+                margin: 0 auto !important;
             }
             &__list {
                 justify-content: space-between;
@@ -162,7 +172,7 @@ export default {
                     }
                     @include respond(phone-big) {
                         margin-bottom: 0.7rem !important;
-                        width: 6rem;
+                        width: 5.5rem;
                     }
                     @include respond(phone-medium) {
                         margin-bottom: 0.2 !important;
@@ -188,6 +198,9 @@ export default {
                     @include respond(tab-land) {
                         margin-bottom: 0.1 !important;
                     }
+                    @include respond(phone-small) {
+                        width: 19rem;   
+                    }
                 }
             }
         }
@@ -197,9 +210,9 @@ export default {
             display: flex;
             flex-flow: row;
             @include respond(phone-small) {
-                grid-column: 4 / 5;
+                grid-column: 2 / 3;
                 grid-row: 5 / 6;
-                // transform: translateX(-50%);
+                justify-content: center;
             }
         
             &__font {

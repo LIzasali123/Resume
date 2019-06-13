@@ -76,6 +76,9 @@ body {
   @include respond(phone-big) {
     grid-template-rows: 10vh 20vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
   }
+  @include respond(phone-small) {
+    grid-template-rows: 5vh min-content 5vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+  }
 }
 
 .coverImg {
