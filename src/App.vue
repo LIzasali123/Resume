@@ -71,7 +71,10 @@ body {
   }
   @include respond(tab-port) {
     grid-template-columns: 2vw 2vw 46vw 46vw 2vw 2vw;
-    grid-template-rows: 10vh min-content  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+    grid-template-rows: 10vh 30vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+  }
+  @include respond(phone-big) {
+    grid-template-rows: 10vh 20vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
   }
 }
 

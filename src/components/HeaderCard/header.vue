@@ -1,28 +1,33 @@
 <template>
     <div class="idcard card">
-        <div class="idcard__info">
-            <h1 class="idcard__heading">Elizabeth Setton</h1>
-            <h4 class="idcard__heading--second">Frontend Developer</h4>
-            <div>
-                <dl class="dlList">
-                    <dt class="dlList__dt">Age</dt>
-                    <dd class="dlList__dd">22</dd>
-                    <dt class="dlList__dt">Phone</dt>
-                    <dd class="dlList__dd">+972 (58) 7471315</dd>
-                    <dt class="dlList__dt">Email</dt>
-                    <dd class="dlList__dd">Lizasali123@gmail.com</dd>
-                    <dt class="dlList__dt">Address</dt>
-                    <dd class="dlList__dd">Tel-Aviv, Israel</dd>
+        <div class="idcard__card">
+            <div class="idcard__card__profilePic">
+                <img class="idcard__card__profilePic--img" src="../../assets/me.jpeg" alt="profile picture">
+            </div>
+            <div class="idcard__card__heading">
+                <h1 class="idcard__card__heading--primary">Elizabeth Setton</h1>
+                <h4 class="idcard__card__heading--secondery">Frontend Developer</h4>
+            </div>
+            <div class="idcard__card__info">
+                <dl class="idcard__card__info__list">
+                    <dt class="idcard__card__info__list--dt">Age</dt>
+                    <dd class="idcard__card__info__list--dd">22</dd>
+                    <dt class="idcard__card__info__list--dt">Phone</dt>
+                    <dd class="idcard__card__info__list--dd">+972 (58) 7471315</dd>
+                    <dt class="idcard__card__info__list--dt">Email</dt>
+                    <dd class="idcard__card__info__list--dd">Lizasali123@gmail.com</dd>
+                    <dt class="idcard__card__info__list--dt">Address</dt>
+                    <dd class="idcard__card__info__list--dd">Tel-Aviv, Israel</dd>
                 </dl>
             </div>
-            <div class="icons">
-                <a class="icons__link" href="https://www.facebook.com/profile.php?id=100000319325615"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></a>
-                <a class="icons__link" href="https://www.linkedin.com/feed/"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
-                <a class="icons__link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
+            <div class="idcard__card__icons">
+                <a class="idcard__card__icons__link" href="https://www.facebook.com/profile.php?id=100000319325615"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></a>
+                <a class="idcard__card__icons__link" href="https://www.linkedin.com/feed/"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
+                <a class="idcard__card__icons__link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
             </div>
-        </div>
-        <div class="idcard__img">
-            <img class="idcard__img--img" src="../../assets/me.jpeg" alt="profile picture">
+            <!-- <div class="idcard__card__icons">
+                <font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"><a class="idcard__card__icons__link" href="https://www.facebook.com/profile.php?id=100000319325615"></a></font-awesome-icon>
+            </div> -->
         </div>
     </div>
 </template>
@@ -37,161 +42,198 @@ export default {
     grid-row: 2 / 4;
     grid-column: 3 / 5;
 
-    display: grid;
-    grid-template-columns: 1fr 23rem max-content 1fr;
-    grid-template-rows: 1fr 23rem 1fr; 
-    grid-row-gap: 2.2rem;
-    grid-column-gap: 3rem;
-    font-size: $font-size-small;
-    border-radius: 1rem;
-    box-shadow: $general-box-shadow;
+    &__card {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 23rem max-content 1fr;
+        grid-template-rows: 1fr min-content min-content min-content 1fr; 
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        grid-column-gap: 3rem;
+        font-size: $font-size-small;
+        border-radius: 1rem;
+        box-shadow: $general-box-shadow;
 
-    &__heading {
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-
-        @include respond(tab-land) {
-            font-size: $font-size-big;
-            letter-spacing: 0.3rem;
-            margin-bottom: 0.2rem !important;
+        @include respond(tab-port) {
+            grid-template-columns: 1fr 20rem max-content 1fr;
+            grid-template-rows: 1fr min-content min-content min-content 1fr; 
+            grid-row-gap: 1rem;
+            grid-column-gap: 1.5rem;
         }
         @include respond(phone-big) {
-            font-size: $font-size-small;
+            grid-template-columns: 1fr 15rem max-content 1fr;
+            grid-row-gap: 0.5rem;
+        }
+        @include respond(phone-small) {
+            grid-template-columns: 0.5rem  4rem 4rem max-content 0.5rem;
+            grid-template-rows: 0.5rem min-content min-content min-content min-content 0.5rem; 
+            grid-row-gap: 1rem;
+            grid-column-gap: 1rem;
+        }
+
+
+        &__profilePic {
+            grid-column: 2 / 3;
+            grid-row: 2 / 5;
+
+            @include respond(phone-small) {
+                grid-column: 2 / 4;
+                grid-row: 2 / 4;
+            }
+            &--img {
+                border-radius: 3%;
+            }
+        }
+        &__heading {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            width: max-content;
+            padding: 0 4rem 0 0 !important;
+            border-bottom: $color-border;
+
+            @include respond(tab-port) {
+                padding: 0 3rem 0 0 !important;
+            }
+            @include respond(phone-small) {
+                grid-column: 4 / 5;
+                grid-row: 2 / 3;
+                padding: 0 0 0 0 !important;
+            }
+            &--primary {
+                font-size: $font-size-big;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                margin-bottom: 0.4rem !important;
+
+                @include respond(tab-land) {
+                    font-size: $font-size-big;
+                    letter-spacing: 0.3rem;
+                }
+                @include respond(phone-big) {
+                    font-size: $font-size-medium1;
+                }
+                @include respond(phone-small) {
+                    letter-spacing: 0.09rem;
+                }
+            }
+            &--secondery {
+                letter-spacing: 0.1rem;
+                font-size: $font-size-medium2;
+
+                @include respond(phone-big) {
+                    // font-size: $font-size-smallest;
+                }
+                @include respond(phone-medium) {
+                    margin-bottom: 0.5rem !important;
+                }
+                @include respond(phone-small) {
+                    margin-bottom: 0.3 !important;
+                    letter-spacing: 0.09rem;
+                }
+            }
+        }
+        &__info {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+            @include respond(phone-small) {
+                grid-column: 4 / 5;
+                grid-row: 3 / 5;
+                // transform: translateX(-50%);
+            }
+            &__list {
+                justify-content: space-between;
+                @include respond(phone-big) {
+                    font-size: $font-size-smallest;
+                }
+                &--dt {
+                    margin-bottom: 0.8rem !important;
+                    float: left;
+                    clear: left;
+                    width: 9rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $color-heading;
+
+                    &:last-of-type{
+                        margin: 0 !important;
+                    }
+                    @include respond(tab-port) {
+                        margin-bottom: 0.4 !important;
+                    }
+                    @include respond(phone-big) {
+                        margin-bottom: 0.7rem !important;
+                        width: 6rem;
+                    }
+                    @include respond(phone-medium) {
+                        margin-bottom: 0.2 !important;
+                    }
+                    @include respond(tab-land) {
+                        margin-bottom: 0.1 !important;
+                    }
+                }
+                &--dd {
+                    &:last-of-type{
+                        margin: 0 !important;
+                    }
+                    margin-bottom: 0.8rem !important;
+                    @include respond(tab-port) {
+                        margin-bottom: 0.4 !important;
+                    }
+                    @include respond(phone-big) {
+                        margin-bottom: 0.7rem !important;
+                    }
+                    @include respond(phone-medium) {
+                        margin-bottom: 0.2 !important;
+                    }
+                    @include respond(tab-land) {
+                        margin-bottom: 0.1 !important;
+                    }
+                }
+            }
+        }
+        &__icons {
+            grid-column: 3 / 4;
+            grid-row: 4 / 5;
+            display: flex;
+            flex-flow: row;
+            @include respond(phone-small) {
+                grid-column: 4 / 5;
+                grid-row: 5 / 6;
+                // transform: translateX(-50%);
+            }
+        
+            &__font {
+                width: 3rem !important;
+                height: 3rem;
+                color: $color-purple-light;
+                transition: all .3s;
+
+                &:hover {
+                    color: $color-purple-dark;
+                    transform: scale(1.2);
+                }
+                @include respond(phone-big) {
+                    width: 2.2rem !important;
+                    height: 2.2rem;
+                }
+            }
+            &__link:link {
+                margin-right: 1rem !important;
+                outline: none;
+                @include respond(phone-big) {
+                    width: 2.2rem !important;
+                    height: 2.2rem;
+                }
+            }  
         }
     }
-    &__info {
-        grid-row: 2 / 3;
-        grid-column: 3 / 4;
-
-        display: grid;
-    }
-    &__img {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-
-        &--img {
-            border-radius:3%;
-        }
-    }
-    @include respond(tab-land) {
-        grid-template-columns: 1fr 18rem max-content 1fr;
-        grid-template-rows: 1fr 18rem 1fr; 
-    }
-    @include respond(phone-big) {
-        grid-template-columns: 1fr 15rem max-content 1fr;
-        grid-template-rows: 1fr 15rem 1fr; 
-    }
-    @include respond(phone-medium) {
-        grid-template-columns: 1fr 13rem max-content 1fr;
-        grid-template-rows: 2vh 13rem 2vh; 
-    }
-    // @include respond(phone-small) {
-    //     grid-template-columns: 50% 50%;
-    //     grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh;
-    //     grid-gap: 0;
-    //     // &__heading {
-    //     //     grid-column: 2 / 3;
-    //     //     grid-row: 1 / 2;
-
-    //     //     &--second {
-    //     //         grid-column: 2 / 3;
-    //     //         grid-row: 2 / 3;
-    //     //     }
-    //     // }
-    //     &__info {
-    //         display: inline;
-    //         grid-column: 2 / 3;
-    //         grid-row: 1 / 6;
-    //     }
-    //     &__img {
-    //         grid-column: 1 / 2;
-    //         grid-row: 1 / 3;
-
-    //         &--img {
-    //             border-radius:50%;
-    //         }
-    //     }
-    // }
 }
-.icons {
-    align-self: end;
-    height: 2.8rem;
-
-    &__font {
-        width: 2.5rem !important;
-        height: 3rem;
-        color: $color-purple-light;
-        transition: all .3s;
-
-        &:hover {
-            color: $color-purple-dark;
-            transform: scale(1.2);
-        }
-        @include respond(tab-land) {
-            width: 2rem !important;
-            height: 2.5rem;
-        }
-        @include respond(phone-medium) {
-            width: 2.2rem !important;
-            height: 2.2rem;
-        }
-    }
-    &__link:link {
-        margin-right: 1rem !important;
-        outline: none;
-    }  
-}
-
 img {
     width: 100%;
     height: 100%;
     border-radius: inherit;
 }
 
-.dlList {
-    font-size: $font-size-small;
-    &__dd {
-        margin-bottom: 0.8rem !important;
-
-        @include respond(phone-big) {
-            margin-bottom: 0.3rem !important;
-        }
-    }
-    &__dt {
-        margin-bottom: 0.8rem !important;
-        float: left;
-        clear: left;
-        width: 9rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $color-heading;
-
-        @include respond(phone-big) {
-            margin-bottom: 0.3rem !important;
-            width: 6rem;
-        }
-    }
-    @include respond(tab-land) {
-        font-size: $font-size-smallest;
-    }
-    // @include respond(phone-small) {
-    //     grid-row: 4 / 6;
-    //     grid-column: 1 / -1;
-    // }
-}
-
-h4,{
-    margin-bottom: 1.2rem !important;
-    letter-spacing: 0.1rem;
-    border-bottom: $color-border;
-
-    @include respond(phone-big) {
-        font-size: $font-size-smallest;
-    }
-    @include respond(phone-medium) {
-        margin-bottom: 0.5rem !important;
-    }
-}
 </style>
 
 
