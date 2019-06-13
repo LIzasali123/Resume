@@ -137,7 +137,6 @@ export default {
         justify-content: center;
         grid-gap: 4rem;
         margin: 5rem 0 !important; 
-        // padding: 3rem !important;
 
         &__icon {
             width: 2.5rem !important;
@@ -150,7 +149,6 @@ export default {
                 color: $color-purple-light;
                 transform: scale(1.2);
             }
-
             &--link {
                 outline: none;
             }
@@ -242,7 +240,6 @@ export default {
                 transform: none;
             }
         }
-    }
-        
+    }    
 }
 </style>

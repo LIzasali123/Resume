@@ -25,9 +25,6 @@
                 <a class="idcard__card__icons__link" href="https://www.linkedin.com/feed/"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
                 <a class="idcard__card__icons__link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
             </div>
-            <!-- <div class="idcard__card__icons">
-                <font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"><a class="idcard__card__icons__link" href="https://www.facebook.com/profile.php?id=100000319325615"></a></font-awesome-icon>
-            </div> -->
         </div>
     </div>
 </template>
@@ -94,11 +91,17 @@ export default {
             grid-column: 3 / 4;
             grid-row: 2 / 3;
             width: max-content;
-            padding: 0 4rem 0 0 !important;
+            padding: 0 6rem 0 0 !important;
             border-bottom: $color-border;
 
+            @include respond(tab-land) {
+               padding: 0 4rem 0 0 !important;
+            }
             @include respond(tab-port) {
                 padding: 0 3rem 0 0 !important;
+            }
+            @include respond(phone-big) {
+                padding: 0 1.5rem 0 0 !important;
             }
             @include respond(phone-small) {
                 grid-column: 2 / 3;
@@ -145,10 +148,6 @@ export default {
             @include respond(phone-small) {
                 grid-column: 2 / 3;
                 grid-row: 4 / 5;
-                justify-content: center;
-            }
-            @include respond(phone-small) {
-                margin: 0 auto !important;
             }
             &__list {
                 justify-content: space-between;
@@ -246,7 +245,4 @@ img {
     height: 100%;
     border-radius: inherit;
 }
-
 </style>
-
-

@@ -1,14 +1,13 @@
 <template>
   <div class="layoutGrid">
     <div class="coverImg"></div>
+    <app-id-card></app-id-card>
+    <div class="bgcolor--header"></div>  
     <app-header></app-header>
-    <div class="bgcolor--infoProjects"></div>  
     <app-info-projects></app-info-projects>
     
     <app-gallery-projects></app-gallery-projects>
     <app-gallery-diploma></app-gallery-diploma>
-    <app-info-diploma></app-info-diploma>
-    <app-skills></app-skills>
     <app-info-personal></app-info-personal>
     <div class="bgcolor--footer"></div>  
     <app-footer></app-footer>
@@ -16,11 +15,11 @@
 </template>
 
 <script>
-  import header from './components/HeaderCard/header.vue'
+  import idCard from './components/idCard/idCard.vue'
   import infoProjects from './components/infoProjects/infoProjects.vue'
   import galleryProjects from './components/galleryProjects/galleryProjects.vue'
   import galleryDiploma from './components/galleryDiploma/galleryDiploma.vue'
-  import infoDiploma from './components/infoDiploma/infoDiploma.vue'
+  import header from './components/header/header.vue'
   import skills from './components/skills/skills.vue'
   import infoPersonal from './components/infoPersonal/infoPersonal.vue'
   import footer from './components/footer/footer.vue'
@@ -28,11 +27,11 @@
   export default {
     name: 'app',
     components: {
+      'app-id-card': idCard,
       'app-header': header,
       'app-info-projects': infoProjects, 
       'app-gallery-projects': galleryProjects,
       'app-gallery-diploma': galleryDiploma,
-      'app-info-diploma': infoDiploma,
       'app-skills': skills,
       'app-info-personal': infoPersonal,
       'app-footer': footer
@@ -63,7 +62,7 @@ body {
 }
 .layoutGrid {
   display: grid;
-  grid-template-rows: 10vh 40vh 10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+  grid-template-rows: 10vh 40vh 10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
   grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
 
   @include respond(tab-land) {
@@ -71,13 +70,13 @@ body {
   }
   @include respond(tab-port) {
     grid-template-columns: 2vw 2vw 46vw 46vw 2vw 2vw;
-    grid-template-rows: 10vh 30vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+    grid-template-rows: 10vh 30vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
   }
   @include respond(phone-big) {
-    grid-template-rows: 10vh 20vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+    grid-template-rows: 10vh 20vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
   }
   @include respond(phone-small) {
-    grid-template-rows: 5vh min-content 5vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh 50vh 10vh 40vh 10vh 40vh 10vh 10vh 5vh;
+    grid-template-rows: 5vh min-content 5vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
   }
 }
 
@@ -91,22 +90,12 @@ body {
     grid-column: 1 / 7;
 }
 .bgcolor {
-  &--infoProjects{
+  &--header{
     background-color: $color-purple-light;
     grid-row: 3 / 6;
     grid-column: 1 / 7;
     z-index: -1;
   }
-  // &--footer {
-  //   grid-column: 1 / 7;
-  //   grid-row: 18 / 21;
-  //   // background-image: linear-gradient(to right bottom, rgba(201, 207, 229, 0.7), rgba(168, 151, 183, 0.4)), url(./assets/cover16.jpg);
-  //   background-size: cover;
-  //   background-position: 0 50%;
-  //   background-repeat: no-repeat;
-  //   position: relative;
-  //   z-index: -1;
-  // }
 }
 
 </style>
