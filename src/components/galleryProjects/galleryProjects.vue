@@ -1,129 +1,35 @@
 <template> 
         <div class="projectGal">
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project1.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae? </p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
-            <div class="projectGal__project">
-                <div class="projectGal__img">
-                    <img src="../../assets/project3.png"  alt="project img">
-                </div>
-                <div class="projectGal__info">
-                    <div class="projectGal__heading">
-                        <p class="projectGal__heading--name">Yelp camp</p>
-                        <a class="projectGal__icon--link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="projectGal__icon" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
-                    </div>
-                    <p class="projectGal__heading--par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?</p>
-                </div>
-                <button class="projectGal__button">View Project</button>
-            </div>
+            <gallery-project
+                v-for="project in projects"
+                v-bind:key="project.id"
+                v-bind:project="project">
+            </gallery-project>
     </div>
-    
 </template>
 
 <script>
+import project from './project.vue'
+
 export default {
-    
+    data: function () {
+        return {
+            projects: [
+                {id: 1, picture: require('../../assets/project1.png'), name: 'leeran setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 2, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 3, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 4, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 5, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 6, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 7, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 8, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+                {id: 9, picture: require('../../assets/project3.png'), name: 'elizabeth setton', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio excepturi dolore beatae, odit labore explicabo maxime ex debitis. Reprehenderit quo delectus aperiam sapiente optio. Magnam beatae omnis consequuntur quae?'},
+            ]
+        }
+    },
+    components: {
+        'gallery-project': project
+    }    
 }
 </script>
 

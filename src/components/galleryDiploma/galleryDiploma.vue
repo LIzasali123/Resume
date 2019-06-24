@@ -325,9 +325,9 @@ export default {
             }
         }
         @include respond(phone-small) {
-            grid-template-columns: 100%;
+            grid-template-columns: min-content;
             grid-template-rows: repeat(8, min-content);
-            grid-gap: 0.8rem;
+            grid-gap: 0.5rem;
             margin: 0 auto !important;
 
             &__diploma {

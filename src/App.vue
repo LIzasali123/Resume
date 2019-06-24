@@ -20,7 +20,6 @@
   import galleryProjects from './components/galleryProjects/galleryProjects.vue'
   import galleryDiploma from './components/galleryDiploma/galleryDiploma.vue'
   import header from './components/header/header.vue'
-  import skills from './components/skills/skills.vue'
   import infoPersonal from './components/infoPersonal/infoPersonal.vue'
   import footer from './components/footer/footer.vue'
 
@@ -32,7 +31,6 @@
       'app-info-projects': infoProjects, 
       'app-gallery-projects': galleryProjects,
       'app-gallery-diploma': galleryDiploma,
-      'app-skills': skills,
       'app-info-personal': infoPersonal,
       'app-footer': footer
     }
