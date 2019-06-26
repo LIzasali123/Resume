@@ -1,18 +1,32 @@
 <template>
     <div class="infoPersonal">
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illum optio ab placeat impedit libero id odio consectetur molestiae vero asperiores, quod explicabo quae, voluptatem voluptates tempore saepe sunt odit!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odio cupiditate. Beatae pariatur minus debitis corrupti rem? Itaque esse vitae officiis. Suscipit porro similique ex adipisci deleniti consequuntur! Quam, fugiat?
-        </div>
+        <h1 class="infoPersonal__heading"> So who am I?</h1>
+        <p class="infoPersonal__content"> 
+            I am passionate web developer I like to design and build websites. 
+            One of the most fun parts for me is to organize my CSS/SCSS folders and to break a part my html to a lot of reusable components. 
+            I strive for aesthetic design and implementation with cutting edge technology, and the internet is my best teacher for that. 
+            I enjoy challenging  myself to learning something new that will enrich my knowledge.
+
+            I have other hobbies as well, one of them is aquascaping i have 2 beautiful aquariums that gives the best soul charger push in the morning. 
+            I am also a fan of board games and have small collection at home, furthermore I like old movies and tv series so spoiler alert.
+            And the last one I practice watercoloring by painting small paintings.
+        </p>
     </div>
 </template>
 
 <style lang="scss">
     .infoPersonal {
-        grid-column: 1 / 7;
-        grid-row: 12 / 13;
+        grid-column: 3 / 5;
+        grid-row: 14 / 15;
+        text-align: center;
 
-        background-color: rgb(225, 214, 252);
+        &__heading {
+            margin-bottom: 1.5rem !important;
+        }
+        &__content {
+            font-size: $font-size-small;
+        }
+
     }
 </style>
 

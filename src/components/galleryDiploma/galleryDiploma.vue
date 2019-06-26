@@ -113,7 +113,7 @@ export default {
 
     .galleryDiploma {
         grid-column: 2 / 6 ;
-        grid-row: 10 / 11;
+        grid-row: 12 / 13;
 
         display: grid;
         grid-template-columns:repeat(4, minmax(10rem, 1fr));

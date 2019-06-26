@@ -5,8 +5,8 @@
     <div class="bgcolor--header"></div>  
     <app-header></app-header>
     <app-info-projects></app-info-projects>
-    
     <app-gallery-projects></app-gallery-projects>
+    <app-info-diploma></app-info-diploma>
     <app-gallery-diploma></app-gallery-diploma>
     <app-info-personal></app-info-personal>
     <div class="bgcolor--footer"></div>  
@@ -16,10 +16,11 @@
 
 <script>
   import idCard from './components/idCard/idCard.vue'
+  import header from './components/header/header.vue'
   import infoProjects from './components/infoProjects/infoProjects.vue'
   import galleryProjects from './components/galleryProjects/galleryProjects.vue'
+  import infoDiploma from './components/infoDiploma/infoDiploma.vue'
   import galleryDiploma from './components/galleryDiploma/galleryDiploma.vue'
-  import header from './components/header/header.vue'
   import infoPersonal from './components/infoPersonal/infoPersonal.vue'
   import footer from './components/footer/footer.vue'
 
@@ -30,6 +31,7 @@
       'app-header': header,
       'app-info-projects': infoProjects, 
       'app-gallery-projects': galleryProjects,
+      'app-info-diploma': infoDiploma, 
       'app-gallery-diploma': galleryDiploma,
       'app-info-personal': infoPersonal,
       'app-footer': footer
@@ -60,7 +62,7 @@ body {
 }
 .layoutGrid {
   display: grid;
-  grid-template-rows: 10vh 40vh 10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
+  grid-template-rows: 10vh 40vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
   grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
 
   @include respond(tab-land) {
@@ -68,13 +70,13 @@ body {
   }
   @include respond(tab-port) {
     grid-template-columns: 2vw 2vw 46vw 46vw 2vw 2vw;
-    grid-template-rows: 10vh 30vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
+    grid-template-rows: 10vh 30vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
   }
   @include respond(phone-big) {
-    grid-template-rows: 10vh 20vh  10vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
+    grid-template-rows: 10vh 20vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
   }
   @include respond(phone-small) {
-    grid-template-rows: 5vh min-content 5vh min-content 10vh 100vh 10vh min-content 10vh min-content 10vh min-content 10vh 5vh;
+    grid-template-rows: 5vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
   }
 }
 
@@ -90,7 +92,7 @@ body {
 .bgcolor {
   &--header{
     background-color: $color-purple-light;
-    grid-row: 3 / 6;
+    grid-row: 3 / 5;
     grid-column: 1 / 7;
     z-index: -1;
   }
