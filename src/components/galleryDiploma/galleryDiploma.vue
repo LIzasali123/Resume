@@ -61,28 +61,26 @@
 </template>
 
 <script>
-export default {
-    data: function() {
-        return {
-            decrease1: false,
-            decrease2: false,
-            decrease3: false,
-            decrease4: false,
-            increase1: false,
-            increase2: false,
-            increase3: false,
-            increase4: false,
-            purple: 'purple',
-            notPurple: 'notPurple',
-            down: 'down'
+    export default {
+        data: function() {
+            return {
+                decrease1: false,
+                decrease2: false,
+                decrease3: false,
+                decrease4: false,
+                increase1: false,
+                increase2: false,
+                increase3: false,
+                increase4: false,
+                purple: 'purple',
+                notPurple: 'notPurple',
+                down: 'down'
+            }
         }
     }
-}
 </script>
 
-
 <style lang="scss">
-
     .increase {
         transform: translateY(-3rem) scale(1.2);
 
@@ -99,6 +97,7 @@ export default {
     }
     .decrease {
         transform: scale(0.9);
+
         @include respond(tab-port) {
             transform: scale(0.9);
         }
@@ -124,6 +123,7 @@ export default {
         &__nav {
             grid-column: 1 / 5;
             grid-row: 2 / 3;
+
             border-top: 3px solid #c9cfe5;
         }
         &__radio {
@@ -136,20 +136,14 @@ export default {
             transition: all .2s;
             box-shadow: $general-box-shadow;
         }
-
         &__diploma {
             display: grid;
             grid-template-rows: min-content min-content;
-            // grid-gap: 1.5rem;
             background-color: $color-background;
             box-shadow: $general-box-shadow;
             border-radius: 3%;
             transition: all .7s;
             margin-bottom: 3rem !important;
-
-            // &:hover {
-            //     transform: translateY(-3rem) scale(1.2);
-            // }
 
             &__img {
                 border-top-left-radius: inherit;
@@ -186,7 +180,6 @@ export default {
             &__diploma {
                 margin-bottom: 0 !important;
                 display: flex;
-
                 &__img {
                     border-bottom-left-radius: inherit;
                     border-bottom-right-radius: inherit;
@@ -325,17 +318,13 @@ export default {
             }
         }
         @include respond(phone-small) {
-            grid-template-columns: min-content;
             grid-template-rows: repeat(8, min-content);
             grid-gap: 0.5rem;
-            margin: 0 auto !important;
-
             &__diploma {
                 &__info {
                     margin-bottom: 1.5rem !important;
                 }
             }
-
             &--1 {
                 grid-column: 1 / -1;
                 grid-row: 1 / 2;
@@ -356,25 +345,21 @@ export default {
                 display: none;
             }
             &--9 {
-                grid-column: 1 / 2;
+                grid-column: 1 / -1;
                 grid-row: 2 / 3;
             }
             &--10 {
-                grid-column: 1 / 2;
+                grid-column: 1 / -1;
                 grid-row: 4 / 5;
             }
             &--11{
-                grid-column: 1 / 2;
+                grid-column: 1 / -1;
                 grid-row: 6 / 7;
             }
             &--12 {
-                grid-column: 1 / 2;
+                grid-column: 1 / -1;
                 grid-row: 8 / 9;
             }
         }
-    }
-    
-    .span {
-        color: $color-heading;
     }
 </style>

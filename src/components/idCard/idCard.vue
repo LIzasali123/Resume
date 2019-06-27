@@ -28,221 +28,214 @@
         </div>
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>
 
 <style lang="scss">
-.idcard {
-    grid-row: 2 / 4;
-    grid-column: 3 / 5;
+    .idcard {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
 
-    &__card {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 23rem max-content 1fr;
-        grid-template-rows: 1fr min-content min-content min-content 1fr; 
-        grid-column-gap: 2rem;
-        grid-row-gap: 1rem;
-        grid-column-gap: 3rem;
-        font-size: $font-size-small;
-        box-shadow: $general-box-shadow;
-        border-radius: inherit;
-
-        @include respond(tab-port) {
-            grid-template-columns: 1fr 20rem max-content 1fr;
+        &__card {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 23rem max-content 1fr;
             grid-template-rows: 1fr min-content min-content min-content 1fr; 
+            grid-column-gap: 2rem;
             grid-row-gap: 1rem;
-            grid-column-gap: 1.5rem;
-        }
-        @include respond(phone-big) {
-            grid-template-columns: 1fr 15rem max-content 1fr;
-            grid-row-gap: 0.5rem;
-        }
-        @include respond(phone-small) {
-            grid-template-columns: 1fr  max-content 1fr;
-            grid-template-rows: 1rem min-content min-content min-content min-content 1rem; 
-            grid-row-gap: 1rem;
-            grid-column-gap: 1rem;
-        }
+            grid-column-gap: 3rem;
+            font-size: $font-size-small;
+            box-shadow: $general-box-shadow;
+            border-radius: inherit;
 
-
-        &__profilePic {
-            grid-column: 2 / 3;
-            grid-row: 2 / 5;
-
-            @include respond(phone-small) {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-                margin: 0 auto !important;
-                width: 8rem;
-                height: 8rem;
-                &--img {
-                    border-radius: 100%;
-                }
-            }
-            &--img {
-                border-radius: 3%;
-            }
-        }
-        &__heading {
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-            width: max-content;
-            padding: 0 6rem 0 0 !important;
-            border-bottom: $color-border;
-
-            @include respond(tab-land) {
-               padding: 0 4rem 0 0 !important;
-            }
             @include respond(tab-port) {
-                padding: 0 3rem 0 0 !important;
+                grid-template-columns: 1fr 20rem max-content 1fr;
+                grid-template-rows: 1fr min-content min-content min-content 1fr; 
+                grid-row-gap: 1rem;
+                grid-column-gap: 1.5rem;
             }
             @include respond(phone-big) {
-                padding: 0 1.5rem 0 0 !important;
+                grid-template-columns: 1fr 15rem max-content 1fr;
+                grid-row-gap: 0.5rem;
             }
             @include respond(phone-small) {
-                grid-column: 2 / 3;
-                grid-row: 3 / 4;
-                padding: 0 1rem 0 1rem !important;
-                text-align: center;
+                grid-template-columns: 1fr  max-content 1fr;
+                grid-template-rows: 1rem min-content min-content min-content min-content 1rem; 
+                grid-row-gap: 1rem;
+                grid-column-gap: 1rem;
             }
-            &--primary {
-                font-size: $font-size-big;
-                text-transform: uppercase;
-                letter-spacing: 0.1rem;
-                margin-bottom: 0.4rem !important;
+
+            &__profilePic {
+                grid-column: 2 / 3;
+                grid-row: 2 / 5;
+
+                @include respond(phone-small) {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    margin: 0 auto !important;
+                    width: 8rem;
+                    height: 8rem;
+                    &--img {
+                        border-radius: 100%;
+                    }
+                }
+                &--img {
+                    border-radius: 3%;
+                }
+            }
+            &__heading {
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+
+                width: max-content;
+                padding: 0 6rem 0 0 !important;
+                border-bottom: $color-border;
 
                 @include respond(tab-land) {
+                    padding: 0 4rem 0 0 !important;
+                }
+                @include respond(tab-port) {
+                    padding: 0 3rem 0 0 !important;
+                }
+                @include respond(phone-big) {
+                    padding: 0 1.5rem 0 0 !important;
+                }
+                @include respond(phone-small) {
+                    grid-column: 2 / 3;
+                    grid-row: 3 / 4;
+
+                    padding: 0 1rem 0 1rem !important;
+                    text-align: center;
+                }
+                &--primary {
                     font-size: $font-size-big;
-                    letter-spacing: 0.3rem;
-                }
-                @include respond(phone-big) {
-                    font-size: $font-size-medium1;
-                }
-                @include respond(phone-small) {
-                    letter-spacing: 0.09rem;
-                }
-            }
-            &--secondery {
-                letter-spacing: 0.1rem;
-                font-size: $font-size-medium2;
-
-                @include respond(phone-big) {
-                    // font-size: $font-size-smallest;
-                }
-                @include respond(phone-medium) {
-                    margin-bottom: 0.5rem !important;
-                }
-                @include respond(phone-small) {
-                    margin-bottom: 0.3 !important;
-                    letter-spacing: 0.09rem;
-                }
-            }
-        }
-        &__info {
-            grid-column: 3 / 4;
-            grid-row: 3 / 4;
-            @include respond(phone-small) {
-                grid-column: 2 / 3;
-                grid-row: 4 / 5;
-            }
-            &__list {
-                justify-content: space-between;
-                @include respond(phone-big) {
-                    font-size: $font-size-smallest;
-                }
-                &--dt {
-                    margin-bottom: 0.8rem !important;
-                    float: left;
-                    clear: left;
-                    width: 9rem;
-                    font-weight: 700;
                     text-transform: uppercase;
-                    color: $color-heading;
+                    letter-spacing: 0.1rem;
+                    margin-bottom: 0.4rem !important;
 
-                    &:last-of-type{
-                        margin: 0 !important;
-                    }
-                    @include respond(tab-port) {
-                        margin-bottom: 0.4 !important;
+                    @include respond(tab-land) {
+                        font-size: $font-size-big;
+                        letter-spacing: 0.3rem;
                     }
                     @include respond(phone-big) {
-                        margin-bottom: 0.7rem !important;
-                        width: 5.5rem;
-                    }
-                    @include respond(phone-medium) {
-                        margin-bottom: 0.2 !important;
-                    }
-                    @include respond(tab-land) {
-                        margin-bottom: 0.1 !important;
-                    }
-                }
-                &--dd {
-                    &:last-of-type{
-                        margin: 0 !important;
-                    }
-                    margin-bottom: 0.8rem !important;
-                    @include respond(tab-port) {
-                        margin-bottom: 0.4 !important;
-                    }
-                    @include respond(phone-big) {
-                        margin-bottom: 0.7rem !important;
-                    }
-                    @include respond(phone-medium) {
-                        margin-bottom: 0.2 !important;
-                    }
-                    @include respond(tab-land) {
-                        margin-bottom: 0.1 !important;
+                        font-size: $font-size-medium1;
                     }
                     @include respond(phone-small) {
-                        width: 19rem;   
+                        letter-spacing: 0.09rem;
+                    }
+                }
+                &--secondery {
+                    letter-spacing: 0.1rem;
+                    font-size: $font-size-medium2;
+
+                    @include respond(phone-medium) {
+                        margin-bottom: 0.5rem !important;
+                    }
+                    @include respond(phone-small) {
+                        margin-bottom: 0.3 !important;
+                        letter-spacing: 0.09rem;
                     }
                 }
             }
-        }
-        &__icons {
-            grid-column: 3 / 4;
-            grid-row: 4 / 5;
-            display: flex;
-            flex-flow: row;
-            @include respond(phone-small) {
-                grid-column: 2 / 3;
-                grid-row: 5 / 6;
-                justify-content: center;
-            }
-        
-            &__font {
-                width: 3rem !important;
-                height: 3rem;
-                color: $color-purple-light;
-                transition: all .3s;
+            &__info {
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
 
-                &:hover {
-                    color: $color-purple-dark;
-                    transform: scale(1.2);
+                @include respond(phone-small) {
+                    grid-column: 2 / 3;
+                    grid-row: 4 / 5;
                 }
-                @include respond(phone-big) {
-                    width: 2.2rem !important;
-                    height: 2.2rem;
+                &__list {
+                    justify-content: space-between;
+
+                    @include respond(phone-big) {
+                        font-size: $font-size-smallest;
+                    }
+                    &--dt {
+                        margin-bottom: 0.8rem !important;
+                        float: left;
+                        clear: left;
+                        width: 9rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: $color-heading;
+
+                        &:last-of-type{
+                            margin: 0 !important;
+                        }
+                        @include respond(tab-port) {
+                            margin-bottom: 0.4 !important;
+                        }
+                        @include respond(phone-big) {
+                            margin-bottom: 0.7rem !important;
+                            width: 5.5rem;
+                        }
+                        @include respond(phone-medium) {
+                            margin-bottom: 0.2 !important;
+                        }
+                        @include respond(tab-land) {
+                            margin-bottom: 0.1 !important;
+                        }
+                    }
+                    &--dd {
+                        &:last-of-type{
+                            margin: 0 !important;
+                        }
+                        margin-bottom: 0.8rem !important;
+
+                        @include respond(tab-port) {
+                            margin-bottom: 0.4 !important;
+                        }
+                        @include respond(phone-big) {
+                            margin-bottom: 0.7rem !important;
+                        }
+                        @include respond(phone-medium) {
+                            margin-bottom: 0.2 !important;
+                        }
+                        @include respond(tab-land) {
+                            margin-bottom: 0.1 !important;
+                        }
+                        @include respond(phone-small) {
+                            width: 19rem;   
+                        }
+                    }
                 }
             }
-            &__link:link {
-                margin-right: 1rem !important;
-                outline: none;
-                @include respond(phone-big) {
-                    width: 2.2rem !important;
-                    height: 2.2rem;
+            &__icons {
+                grid-column: 3 / 4;
+                grid-row: 4 / 5;
+
+                display: flex;
+                flex-flow: row;
+                @include respond(phone-small) {
+                    grid-column: 2 / 3;
+                    grid-row: 5 / 6;
+                    
+                    justify-content: center;
                 }
-            }  
+            
+                &__font {
+                    width: 3rem !important;
+                    height: 3rem;
+                    color: $color-purple-light;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $color-purple-dark;
+                        transform: scale(1.2);
+                    }
+                    @include respond(phone-big) {
+                        width: 2.2rem !important;
+                        height: 2.2rem;
+                    }
+                }
+                &__link:link {
+                    margin-right: 1rem !important;
+                    outline: none;
+                    @include respond(phone-big) {
+                        width: 2.2rem !important;
+                        height: 2.2rem;
+                    }
+                }  
+            }
         }
     }
-}
-img {
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-}
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="infoDiploma">
-        <h1 class=infoDiploma__heading>This is the curses that I've taken</h1>
-        <p class="infoDiploma__content">
+        <h1 class="text text__heading">Curses that I've taken</h1>
+        <p class="text text__content">
             This is the curses that I've taken. 
             They taught me a lot and with the help of the curse staff I was able to ask questions and get answers.  
             Of course they only covered their subjects so mostly I was self learning from the internet as well. 
@@ -9,24 +9,10 @@
         </p>
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>
+
 <style lang="scss">
     .infoDiploma {
         grid-column: 3 / 5;
         grid-row: 10 / 11;
-
-        text-align: center;
-        &__heading {
-            margin-bottom: 1.5rem !important;
-        }
-        &__content {
-            font-size: $font-size-small;
-        }
     }
 </style>
-
-

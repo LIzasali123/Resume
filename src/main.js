@@ -2,6 +2,8 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,7 +18,7 @@ library.add(faLinkedin)
 library.add(faGithubSquare)
 
 Vue.component(FontAwesomeIcon.name, FontAwesomeIcon)
-
+Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
 
 new Vue({

@@ -40,62 +40,97 @@
 </script>
 
 <style lang="scss">
-*, *::after, *::before {
-  margin: 0 !important;
-  padding: 0!important;
-  box-sizing: inherit !important;
-}
-html {
-  font-size: 76.5% !important; //10px
-}
-
-body {
-  box-sizing: border-box !important;
-  font-family: "Lato", sans-serif;
-  font-family: "Josefin Sans", sans-serif !important;
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem !important;
-  line-height: 1.7 !important;
-  background-color: $color-background;
-
-}
-.layoutGrid {
-  display: grid;
-  grid-template-rows: 10vh 40vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
-  grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
-
-  @include respond(tab-land) {
-    grid-template-columns: 5vw 5vw 40vw 40vw 5vw 5vw;
+  *, *::after, *::before {
+    margin: 0 !important;
+    padding: 0!important;
+    box-sizing: inherit !important;
   }
-  @include respond(tab-port) {
-    grid-template-columns: 2vw 2vw 46vw 46vw 2vw 2vw;
-    grid-template-rows: 10vh 30vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
+  html {
+    font-size: 76.5% !important; //10px
   }
-  @include respond(phone-big) {
-    grid-template-rows: 10vh 20vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
-  }
-  @include respond(phone-small) {
-    grid-template-rows: 5vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
-  }
-}
 
-.coverImg {
-    background-image: url(./assets/coverr.jpg);
-    background-size: cover;
-    background-position: 0 14%;
-    background-repeat: no-repeat;
-    position: relative;
-    grid-row: 1 / 3;
-    grid-column: 1 / 7;
-}
-.bgcolor {
-  &--header{
-    background-color: $color-purple-light;
-    grid-row: 3 / 5;
-    grid-column: 1 / 7;
-    z-index: -1;
-  }
-}
+  body {
+    box-sizing: border-box !important;
+    font-family: "Lato", sans-serif;
+    font-family: "Josefin Sans", sans-serif !important;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem !important;
+    line-height: 1.7 !important;
+    background-color: $color-background;
 
+  }
+  .layoutGrid {
+    display: grid;
+    grid-template-rows: 10vh 40vh 10vh min-content 10vh min-content 10vh min-content 10vh min-content 10vh min-content 10vh min-content 10vh min-content;
+    grid-template-columns: 10vw 10vw 30vw 30vw 10vw 10vw;
+
+    @include respond(tab-land) {
+      grid-template-columns: 5vw 5vw 40vw 40vw 5vw 5vw;
+    }
+    @include respond(tab-port) {
+      grid-template-columns: 2vw 2vw 46vw 46vw 2vw 2vw;
+      grid-template-rows: 10vh 30vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
+    }
+    @include respond(phone-big) {
+      grid-template-rows: 10vh 20vh 10vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
+    }
+    @include respond(phone-small) {
+      grid-template-rows: 5vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 5vh min-content 10vh min-content 10vh 5vh;
+    }
+  }
+
+  .coverImg {
+      background-image: url(./assets/coverr.jpg);
+      background-size: cover;
+      background-position: 0 14%;
+      background-repeat: no-repeat;
+      position: relative;
+      grid-row: 1 / 3;
+      grid-column: 1 / 7;
+  }
+  .bgcolor {
+    &--header{
+      background-color: $color-purple-light;
+      grid-row: 3 / 5;
+      grid-column: 1 / 7;
+      z-index: -1;
+    }
+  }
+  .text {
+    text-align: center;
+    &__heading {
+      color: $color-heading;
+      margin: 0 auto 1.5rem auto !important;     
+      border-bottom: $color-border;
+      width: max-content;
+      padding: 1rem 2rem !important;
+      font-size: $font-size-big;
+
+      @include respond(phone-medium) {
+        font-size: $font-size-small;
+      }
+    }
+    &--header {
+      border-bottom: none;
+      padding: 0!important;
+      width: min-content;
+      margin: 0 auto 1rem auto !important;    
+    }
+    &__content {
+      font-size: $font-size-small;
+
+      @include respond(phone-medium) {
+        font-size: $font-size-smallest;
+      }
+    }
+  }
+  img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+  }
+  span {
+    color: $color-heading;
+  }
 </style>

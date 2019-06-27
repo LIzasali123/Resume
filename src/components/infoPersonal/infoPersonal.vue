@@ -1,7 +1,7 @@
 <template>
     <div class="infoPersonal">
-        <h1 class="infoPersonal__heading"> So who am I?</h1>
-        <p class="infoPersonal__content"> 
+        <h1 class="text text__heading"> So who am I?</h1>
+        <p class="text text__content"> 
             I am passionate web developer I like to design and build websites. 
             One of the most fun parts for me is to organize my CSS/SCSS folders and to break a part my html to a lot of reusable components. 
             I strive for aesthetic design and implementation with cutting edge technology, and the internet is my best teacher for that. 
@@ -18,15 +18,5 @@
     .infoPersonal {
         grid-column: 3 / 5;
         grid-row: 14 / 15;
-        text-align: center;
-
-        &__heading {
-            margin-bottom: 1.5rem !important;
-        }
-        &__content {
-            font-size: $font-size-small;
-        }
-
     }
 </style>
-
