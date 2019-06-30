@@ -93,6 +93,7 @@
             }
             &:hover {
                 background-color: $color-purple-light;
+                color: $color-purple-lighter;
             }
         }
         &__info {

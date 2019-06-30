@@ -7,51 +7,36 @@
             Clean and soft design is my passion, and I achieve it using web design, graphic design, and water coloring.
         </p>
         <div class="btncv">
-            <a class="btncv--cv" href="../../assets/me.jpeg" download>Download cv</a>
+            <a class="btncv__cv" @click.prevent="downloadItem(item.url)" :href="item.url">
+                Download CV
+            </a>
         </div>
-        <!-- <button @click="downloadWithAxios">Download file with Vue Resource</button> -->
     </div>    
 </template>
 <script>
 import axios from 'axios'
-// import VueAxios from 'vue-axios'
+
 export default {
-    data() {
-        return {    
-            url:'../../img/me.png'
+    data: function () {
+        return {  
+            item: {
+                url: require('../../assets/Resume.pdf')
+            }
         }
     },
     methods: {    
-        forceFileDownload(response){
-            const url = window.URL.createObjectURL(new Blob([response.data]));
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute('download', 'file.png'); //or any other extension;
-            document.body.appendChild(link);
-            link.click();
-        },
-        // downloadWithVueResource() {
-        //     this.$http({
-        //         method: 'get',
-        //         url: this.url,
-        //         responseType: 'arraybuffer'
-        //     })
-        //     .then(response => {
-        //         this.forceFileDownload(response);  
-        //     })
-        //     .catch(() => console.log('error occured'));
-        // }
-        // },
-        downloadWithAxios(){
-            axios({
-                method: 'get',
-                url: this.url,
-                responseType: 'arraybuffer'
+        downloadItem (url) {
+            axios.get(url, { responseType: 'blob' })
+            .then(({ data }) => {
+                let blob = new Blob([data], { type: 'application/pdf' })
+                let link = document.createElement('a')
+                link.href = window.URL.createObjectURL(blob)
+                link.download = 'ElizabethSetton.pdf'
+                link.click()
             })
-            .then(response => {    
-                this.forceFileDownload(response)
+            .catch(error => {
+                    console.error(error)
             })
-            .catch(() => console.log('error occured'))
         }
     }
 }
@@ -65,25 +50,28 @@ export default {
         margin: 4rem 0 4rem 0 !important;
     }
     .btncv {
-       margin-top: 2rem !important;
-       text-align: center;
-        &--cv {
-            color: white;
-            transition: transform .3s;
+        margin: 2rem auto 0 auto !important;
+        width: max-content;
+        transition: all .3s;
+
+        &__cv, &__cv:link {
             background-color: $color-heading;
             padding: 1rem 1.5rem !important;
-            border: 3px solid $color-purple-light;
+            border: 3px solid inherit;
+            font-size: $font-size-medium2;
+            color: white;
 
-            &:hover, &:focus {
-                transform: translateY(-1rem);
+            &:hover:link {
                 text-decoration: none;
-                color: white;
                 border: 3px solid white;
             }
             @include respond(phone-medium) {
                 font-size: $font-size-small;
                 padding: 0.5rem 1rem !important;
             }
+        }
+        &:hover {
+            transform: translateY(-0.5rem) scale(1.1);
         }
     }
 </style>
