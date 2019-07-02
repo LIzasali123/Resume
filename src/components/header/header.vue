@@ -28,14 +28,14 @@ export default {
         downloadItem (url) {
             axios.get(url, { responseType: 'blob' })
             .then(({ data }) => {
-                let blob = new Blob([data], { type: 'application/pdf' })
-                let link = document.createElement('a')
-                link.href = window.URL.createObjectURL(blob)
-                link.download = 'ElizabethSetton.pdf'
-                link.click()
+                let blob = new Blob([data], { type: 'application/pdf' });
+                let link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'ElizabethSetton.pdf';
+                link.click();
             })
             .catch(error => {
-                    console.error(error)
+                console.log.error(error);
             })
         }
     }
@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style lang="scss">
+    @import "@/styles/_variables.scss";
+    @import "@/styles/_mixins.scss";
     .header {
         grid-column: 3 / 5;
         grid-row: 4 / 5;

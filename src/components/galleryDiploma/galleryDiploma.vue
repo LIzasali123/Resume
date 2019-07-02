@@ -81,6 +81,8 @@
 </script>
 
 <style lang="scss">
+    @import "@/styles/_variables.scss";
+    @import "@/styles/_mixins.scss";
     .increase {
         transform: translateY(-3rem) scale(1.2);
 

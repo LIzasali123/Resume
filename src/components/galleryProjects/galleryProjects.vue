@@ -34,6 +34,8 @@
 </script>
 
 <style lang="scss">
+    @import "@/styles/_variables.scss";
+    @import "@/styles/_mixins.scss";
     .projectGal {
         grid-column: 2 / 6;
         grid-row: 8 / 9;  

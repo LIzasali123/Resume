@@ -40,6 +40,8 @@
 </script>
 
 <style lang="scss">
+    @import "@/styles/_variables.scss";
+    @import "@/styles/_mixins.scss";
   *, *::after, *::before {
     margin: 0 !important;
     padding: 0!important;

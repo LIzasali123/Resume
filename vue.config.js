@@ -12,16 +12,30 @@ module.exports = {
               }
             }
           ]
-        }
+        }//,
+        // {
+        //   test: /\.scss$/,
+        //   use: [
+        //     'vue-style-loader',
+        //     'css-loader',
+        //     {
+        //       loader: 'sass-loader',
+        //       options: {
+        //         data: `@import "@/styles/_variables.scss";
+        //                @import "@/styles/_mixins.scss";`
+        //       }
+        //     }
+        //   ]
+        // }
       ]
     }
-  },
-  css: {
-    loaderOptions: {
-      sass: {
-        data: `@import "@/styles/_variables.scss";
-              @import "@/styles/_mixins.scss";`
-      }
-    }
-  }
+  }//,
+  // css: {
+  //   loaderOptions: {
+  //     sass: {
+  //       data: `@import "@/styles/_variables.scss";
+  //             @import "@/styles/_mixins.scss";`
+  //     }
+  //   }
+  // }
 };
