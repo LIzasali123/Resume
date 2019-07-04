@@ -30,8 +30,6 @@
 </template>
 
 <style lang="scss">
-    @import "@/styles/_variables.scss";
-    @import "@/styles/_mixins.scss";
     .idcard {
         grid-column: 3 / 5;
         grid-row: 2 / 4;

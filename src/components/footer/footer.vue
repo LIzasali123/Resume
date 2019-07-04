@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-    @import "@/styles/_variables.scss";
-    @import "@/styles/_mixins.scss";
     .footer {
         grid-column: 1 / 7;
         grid-row: 16 / 17;

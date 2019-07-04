@@ -1,62 +1,62 @@
 <template>
     <div class="galleryDiploma">
-            <div class="galleryDiploma__diploma galleryDiploma--1"
-                @mouseover="increase1 = true , decrease1 = false, decrease2 = true, decrease3 = true, decrease4 = true"
-                @mouseout="increase1 = false , decrease2 = false, decrease3 = false, decrease4 = false"
-                v-bind:class="{increase: increase1, decrease: decrease1}">
-                <div class="galleryDiploma__diploma__img">
-                    <img src="../../assets/diploma1.jpg">
-                </div>
-                <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+        <div class="galleryDiploma__diploma galleryDiploma--1"
+            @mouseover="increase1 = true , decrease1 = false, decrease2 = true, decrease3 = true, decrease4 = true"
+            @mouseout="increase1 = false , decrease2 = false, decrease3 = false, decrease4 = false"
+            v-bind:class="{increase: increase1, decrease: decrease1}">
+            <div class="galleryDiploma__diploma__img">
+                <img src="../../assets/diploma1.jpg">
             </div>
-            <div class="galleryDiploma__diploma galleryDiploma--2"
-                @mouseover="increase2 = true, decrease1 = true, decrease3 = true, decrease4 = true"
-                @mouseout="increase2 = false, decrease1 = false, decrease3 = false, decrease4 = false"
-                v-bind:class="{increase: increase2, decrease: decrease2}">
-                <div class="galleryDiploma__diploma__img">
-                    <img src="../../assets/diploma1.jpg">
-                </div>
-                <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+        </div>
+        <div class="galleryDiploma__diploma galleryDiploma--2"
+            @mouseover="increase2 = true, decrease1 = true, decrease3 = true, decrease4 = true"
+            @mouseout="increase2 = false, decrease1 = false, decrease3 = false, decrease4 = false"
+            v-bind:class="{increase: increase2, decrease: decrease2}">
+            <div class="galleryDiploma__diploma__img">
+                <img src="../../assets/diploma1.jpg">
             </div>
-            <div class="galleryDiploma__diploma galleryDiploma--3"
-                @mouseover="increase3 = true, decrease1 = true, decrease2 = true, decrease4 = true"
-                @mouseout="increase3 = false, decrease1 = false, decrease2 = false, decrease4 = false"
-                v-bind:class="{increase: increase3, decrease: decrease3}">
-                <div class="galleryDiploma__diploma__img">
-                    <img src="../../assets/diploma1.jpg">
-                </div>
-                <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+        </div>
+        <div class="galleryDiploma__diploma galleryDiploma--3"
+            @mouseover="increase3 = true, decrease1 = true, decrease2 = true, decrease4 = true"
+            @mouseout="increase3 = false, decrease1 = false, decrease2 = false, decrease4 = false"
+            v-bind:class="{increase: increase3, decrease: decrease3}">
+            <div class="galleryDiploma__diploma__img">
+                <img src="../../assets/diploma1.jpg">
             </div>
-            <div class="galleryDiploma__diploma galleryDiploma--4"
-                @mouseover="increase4 = true, decrease1 = true, decrease2 = true, decrease3 = true"
-                @mouseout="increase4 = false, decrease1 = false, decrease2 = false, decrease3 = false"
-                v-bind:class="{increase: increase4, decrease: decrease4}">
-                <div class="galleryDiploma__diploma__img">
-                    <img src="../../assets/diploma1.jpg">
-                </div>
-                <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+        </div>
+        <div class="galleryDiploma__diploma galleryDiploma--4"
+            @mouseover="increase4 = true, decrease1 = true, decrease2 = true, decrease3 = true"
+            @mouseout="increase4 = false, decrease1 = false, decrease2 = false, decrease3 = false"
+            v-bind:class="{increase: increase4, decrease: decrease4}">
+            <div class="galleryDiploma__diploma__img">
+                <img src="../../assets/diploma1.jpg">
             </div>
-            <div class="galleryDiploma__nav"></div>
-            <div class="galleryDiploma__radio galleryDiploma--5" v-bind:class="[increase1 ? purple : notPurple]"></div>
-            <div class="galleryDiploma__radio galleryDiploma--6" v-bind:class="[increase2 ? purple : notPurple]"></div>
-            <div class="galleryDiploma__radio galleryDiploma--7" v-bind:class="[increase3 ? purple : notPurple]"></div>
-            <div class="galleryDiploma__radio galleryDiploma--8" v-bind:class="[increase4 ? purple : notPurple]"></div>
-            <div class="galleryDiploma__diploma__info galleryDiploma--9" v-bind:class="{down: increase1,  decrease: decrease1}">
-                <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-                <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
-            </div>
-            <div class="galleryDiploma__diploma__info galleryDiploma--10" v-bind:class="{down: increase2,  decrease: decrease2}">
-                <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-                <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
-            </div>
-            <div class="galleryDiploma__diploma__info galleryDiploma--11" v-bind:class="{down: increase3,  decrease: decrease3}">
-                <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-                <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
-            </div>
-            <div class="galleryDiploma__diploma__info galleryDiploma--12" v-bind:class="{down: increase4,  decrease: decrease4}">
-                <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-                <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
-            </div>
+            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+        </div>
+        <div class="galleryDiploma__nav"></div>
+        <div class="galleryDiploma__radio galleryDiploma--5" v-bind:class="[increase1 ? purple : notPurple]"></div>
+        <div class="galleryDiploma__radio galleryDiploma--6" v-bind:class="[increase2 ? purple : notPurple]"></div>
+        <div class="galleryDiploma__radio galleryDiploma--7" v-bind:class="[increase3 ? purple : notPurple]"></div>
+        <div class="galleryDiploma__radio galleryDiploma--8" v-bind:class="[increase4 ? purple : notPurple]"></div>
+        <div class="galleryDiploma__diploma__info galleryDiploma--9" v-bind:class="{down: increase1,  decrease: decrease1}">
+            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
+            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        </div>
+        <div class="galleryDiploma__diploma__info galleryDiploma--10" v-bind:class="{down: increase2,  decrease: decrease2}">
+            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
+            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        </div>
+        <div class="galleryDiploma__diploma__info galleryDiploma--11" v-bind:class="{down: increase3,  decrease: decrease3}">
+            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
+            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        </div>
+        <div class="galleryDiploma__diploma__info galleryDiploma--12" v-bind:class="{down: increase4,  decrease: decrease4}">
+            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
+            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        </div>
     </div>
 </template>
 
@@ -81,8 +81,7 @@
 </script>
 
 <style lang="scss">
-    @import "@/styles/_variables.scss";
-    @import "@/styles/_mixins.scss";
+
     .increase {
         transform: translateY(-3rem) scale(1.2);
 
