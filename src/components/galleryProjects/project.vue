@@ -10,7 +10,7 @@
             </div>
             <p class="projectGal__heading--par">{{ project.content }}</p>
         </div>
-        <button class="projectGal__button">View Project</button>
+        <a v-bind:href="project.href" class="projectGal__button">View Project</a>
     </div>
 </template>
 <script>

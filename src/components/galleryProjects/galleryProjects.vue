@@ -15,15 +15,15 @@
         data: function () {
             return {
                 projects: [
-                    { id: 1, picture: require('../../assets/project1.png'), name: 'My Personal Website', content: 'My personal website is a portfolio of all my projects and the knowledge I acquired. I built and designed this website using Vue js, SCSS, JavaScript,  and BEM. You can also check my GitHub to see the source code for all my projects.' },
-                    { id: 2, picture: require('../../assets/project3.png'), name: 'Memory Game', content: 'Small memory game with Game of Thrones theme.  I built this game using vanillaJs and CSS. There I practiced my 3D CSS styles and animations. Later on I added mongodb to store the top 10 heights scores to make it more challenging. Try to beat it.' },
-                    { id: 3, picture: require('../../assets/project3.png'), name: 'SQL output to JSON', content: 'This tool I created with my husband, he need some quick solution to transform sql code to jason so I build the web design and make it mobile friendly. This is war good opportunity to practice more on my frontend skills.' },
-                    { id: 4, picture: require('../../assets/project3.png'), name: 'Naxter', content: 'This was a project of advance css and sass curse where I practice my grid layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.' },
-                    { id: 5, picture: require('../../assets/project3.png'), name: 'Trilo', content: 'This was a project of advance css and sass curse where I practice my flexbox layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.' },
-                    { id: 6, picture: require('../../assets/project3.png'), name: 'Natours', content: 'This was a project of advance css and sass curse where I practice my column layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.' },
-                    { id: 7, picture: require('../../assets/project3.png'), name: 'Rgba color game', content: 'Small game that displays random rgba color and you have to guess what the right color from 6 card that painted in that random color. Very useful game for practice rgba color code knowledge.' },
-                    { id: 8, picture: require('../../assets/project3.png'), name: 'Burger Builder', content: 'This website I created along side with react redux curse. There  you can login and then customize your own  burger,  visually you can build it like burger tower, and then you can order it. ' },
-                    { id: 9, picture: require('../../assets/project3.png'), name: 'Yelp Camp', content: 'This is my first website that I build along with web developer bootcamp curse. This is a website for camping  where you can login and make post of your camping and all the information of that trip. Other users can comment on your post or upload their own campgrounds.' },
+                    { id: 1, picture: require('../../assets/project1.png'), name: 'My Personal Website', content: 'My personal website is a portfolio of all my projects and the knowledge I acquired. I built and designed this website using Vue js, SCSS, JavaScript,  and BEM. You can also check my GitHub to see the source code for all my projects.', href: 'http://elizabethsetton.com/' },
+                    { id: 2, picture: require('../../assets/project3.png'), name: 'Memory Game', content: 'Small memory game with Game of Thrones theme.  I built this game using vanillaJs and CSS. There I practiced my 3D CSS styles and animations. Later on I added mongodb to store the top 10 heights scores to make it more challenging. Try to beat it.', href: 'http://memoryGame.elizabethsetton.com/' },
+                    { id: 3, picture: require('../../assets/project3.png'), name: 'SQL output to JSON', content: 'This tool I created with my husband, he need some quick solution to transform sql code to jason so I build the web design and make it mobile friendly. This is war good opportunity to practice more on my frontend skills.', href: 'http://sqloutputtojson.com/' },
+                    { id: 4, picture: require('../../assets/project3.png'), name: 'Naxter', content: 'This was a project of advance css and sass curse where I practice my grid layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://naxter.elizabethsetton.com/' },
+                    { id: 5, picture: require('../../assets/project3.png'), name: 'Trilo', content: 'This was a project of advance css and sass curse where I practice my flexbox layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://trilo.elizabethsetton.com/' },
+                    { id: 6, picture: require('../../assets/project3.png'), name: 'Natours', content: 'This was a project of advance css and sass curse where I practice my column layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://natours.elizabethsetton.com/' },
+                    { id: 7, picture: require('../../assets/project3.png'), name: 'Rgba color game', content: 'Small game that displays random rgba color and you have to guess what the right color from 6 card that painted in that random color. Very useful game for practice rgba color code knowledge.', href: 'http://colorGame.elizabethsetton.com/' },
+                    { id: 8, picture: require('../../assets/project3.png'), name: 'Burger Builder', content: 'This website I created along side with react redux curse. There  you can login and then customize your own  burger,  visually you can build it like burger tower, and then you can order it. ', href: 'http://natours.elizabethsetton.com/' },
+                    { id: 9, picture: require('../../assets/project3.png'), name: 'Yelp Camp', content: 'This is my first website that I build along with web developer bootcamp curse. This is a website for camping  where you can login and make post of your camping and all the information of that trip. Other users can comment on your post or upload their own campgrounds.', href: 'http://natours.elizabethsetton.com/' },
                 ]
             }
         },
@@ -79,6 +79,9 @@
 
         }
         &__button {
+            padding: 0.5rem 0 0.5rem 0 !important;
+            text-align: center;
+            text-decoration: none;
             font-weight: 500;
             letter-spacing: 0.1rem;
             border: none;
@@ -94,6 +97,7 @@
             &:hover {
                 background-color: $color-purple-light;
                 color: $color-purple-lighter;
+                text-decoration: none;
             }
         }
         &__info {
