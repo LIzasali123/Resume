@@ -5,25 +5,25 @@
             @mouseout="increase1 = false , decrease2 = false, decrease3 = false, decrease4 = false"
             v-bind:class="{increase: increase1, decrease: decrease1}">
             <div class="galleryDiploma__diploma__img">
-                <img src="../../assets/diploma1.jpg">
+                <img src="../../assets/webDeveloper.png">
             </div>
-            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+            <p class="galleryDiploma__diploma__name">Web Developer Bootcamp</p>
         </div>
         <div class="galleryDiploma__diploma galleryDiploma--2"
             @mouseover="increase2 = true, decrease1 = true, decrease3 = true, decrease4 = true"
             @mouseout="increase2 = false, decrease1 = false, decrease3 = false, decrease4 = false"
             v-bind:class="{increase: increase2, decrease: decrease2}">
             <div class="galleryDiploma__diploma__img">
-                <img src="../../assets/diploma1.jpg">
+                <img src="../../assets/react.png">
             </div>
-            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+            <p class="galleryDiploma__diploma__name">React Redux</p>
         </div>
         <div class="galleryDiploma__diploma galleryDiploma--3"
             @mouseover="increase3 = true, decrease1 = true, decrease2 = true, decrease4 = true"
             @mouseout="increase3 = false, decrease1 = false, decrease2 = false, decrease4 = false"
             v-bind:class="{increase: increase3, decrease: decrease3}">
             <div class="galleryDiploma__diploma__img">
-                <img src="../../assets/diploma1.jpg">
+                <img src="../../assets/scss.jpg">
             </div>
             <p class="galleryDiploma__diploma__name">Advence css and sass</p>
         </div>
@@ -32,30 +32,42 @@
             @mouseout="increase4 = false, decrease1 = false, decrease2 = false, decrease3 = false"
             v-bind:class="{increase: increase4, decrease: decrease4}">
             <div class="galleryDiploma__diploma__img">
-                <img src="../../assets/diploma1.jpg">
+                <img src="../../assets/vuejs.png">
             </div>
-            <p class="galleryDiploma__diploma__name">Advence css and sass</p>
+            <p class="galleryDiploma__diploma__name">VueJS and Vue CLI 3</p>
         </div>
         <div class="galleryDiploma__nav"></div>
         <div class="galleryDiploma__radio galleryDiploma--5" v-bind:class="[increase1 ? purple : notPurple]"></div>
         <div class="galleryDiploma__radio galleryDiploma--6" v-bind:class="[increase2 ? purple : notPurple]"></div>
         <div class="galleryDiploma__radio galleryDiploma--7" v-bind:class="[increase3 ? purple : notPurple]"></div>
         <div class="galleryDiploma__radio galleryDiploma--8" v-bind:class="[increase4 ? purple : notPurple]"></div>
-        <div class="galleryDiploma__diploma__info galleryDiploma--9" v-bind:class="{down: increase1,  decrease: decrease1}">
-            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        <div class="galleryDiploma__diploma__info galleryDiploma--9" 
+            v-bind:class="{down: increase1,  decrease: decrease1}"
+            @mouseover="increase1 = true , decrease1 = false, decrease2 = true, decrease3 = true, decrease4 = true"
+            @mouseout="increase1 = false , decrease2 = false, decrease3 = false, decrease4 = false">
+            <p class="galleryDiploma__diploma__info__name">Web Developer Bootcamp</p>
+            <p>This course taught me the basics of being a <span>fullstack developer</span> by building small projects using <span>NodeJS</span>, <span>Express</span>, <span>MongoDB</span>, <span>HTML</span>, <span>CSS</span>, <span>VanillaJS</span>, <span>jQuery</span>, <span>npm</span>, and <span>bootstrap 3 and 4.</span> With the help of the course and the teacher I understand my preference and what my passion in life is.</p>
         </div>
-        <div class="galleryDiploma__diploma__info galleryDiploma--10" v-bind:class="{down: increase2,  decrease: decrease2}">
-            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        <div class="galleryDiploma__diploma__info galleryDiploma--10" 
+            v-bind:class="{down: increase2,  decrease: decrease2}"
+            @mouseover="increase2 = true, decrease1 = true, decrease3 = true, decrease4 = true"
+            @mouseout="increase2 = false, decrease1 = false, decrease3 = false, decrease4 = false">
+            <p class="galleryDiploma__diploma__info__name">React Redux</p>
+            <p>This course taught me how to use frameworks and how to break my websites into reusable components. The technologies I learned in this course are <span>ReactJS</span>, <span>Redux</span>, <span>Redux Saga</span>, <span>AJAX</span>, <span>forms</span> and <span>form validation</span>, <span>Firebase,</span> testing using <span>Jest</span>, <span>webpack</span>, and <span>NextJS</span>.</p>
         </div>
-        <div class="galleryDiploma__diploma__info galleryDiploma--11" v-bind:class="{down: increase3,  decrease: decrease3}">
+        <div class="galleryDiploma__diploma__info galleryDiploma--11" 
+            v-bind:class="{down: increase3,  decrease: decrease3}"
+            @mouseover="increase3 = true, decrease1 = true, decrease2 = true, decrease4 = true"
+            @mouseout="increase3 = false, decrease1 = false, decrease2 = false, decrease4 = false">
             <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+            <p>The only technologies I was taught are <span>SCSS</span> and <span>Sass</span>, however the core of the course was focused on <span>responsive design</span> using <span>column</span>, <span>flexbox</span> and <span>grid layout</span>. Also we covered how to organize our SCSS files, make them readable and clean, and with the help of <span>BEM</span> my HTML code is just as clean.</p>
         </div>
-        <div class="galleryDiploma__diploma__info galleryDiploma--12" v-bind:class="{down: increase4,  decrease: decrease4}">
-            <p class="galleryDiploma__diploma__info__name">Advence css and sass</p>
-            <p>Lorem ipsum dolor sit amet <span class="span"> adipisicing elit.</span> Beatae inventore, quibusdam <span class="span">ipsum</span> quia ex incidunt esse, tenetur aperiam consequatur <span class="span"> odio</span> sed, delectus adipisci sequi nulla modi iusto tempore a.</p>
+        <div class="galleryDiploma__diploma__info galleryDiploma--12" 
+            v-bind:class="{down: increase4,  decrease: decrease4}"
+            @mouseover="increase4 = true, decrease1 = true, decrease2 = true, decrease3 = true"
+            @mouseout="increase4 = false, decrease1 = false, decrease2 = false, decrease3 = false">
+            <p class="galleryDiploma__diploma__info__name">VueJS and Vue CLI 3</p>
+            <p>In this course we've covered the use of <span>Vue</span>, <span>Vue CLI 2</span> and <span>3</span>, interacting with the <span>DOM</span>, using <span>Axios</span> to consume <span>APIs</span>, but mainly we've heavily learned to interact with <span>webpack</span>. Vue is the best option for <span>SPAs</span> since it's lighter than other frameworks.</p>
         </div>
     </div>
 </template>

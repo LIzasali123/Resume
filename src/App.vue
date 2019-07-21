@@ -83,7 +83,7 @@
   }
 
   .coverImg {
-      background-image: url(./assets/coverr.jpg);
+      background-image: url(./assets/cover.jpg);
       background-size: cover;
       background-position: 0 14%;
       background-repeat: no-repeat;

@@ -2,8 +2,8 @@
     <div class="infoProjects">
         <h1 class="text text__heading">My Projects</h1>
         <p class="text text__content">
-            Those all my projects that I’ve built from the lates to the old ones.
-            Most of them were more for practice some of the technologies that I’ve have learned except of my personal website. 
+            Those all my projects that I’ve built from the latest to the old ones.
+            Most of them were more for practice some of the technologies that I have learned except of my personal website. 
             I have more projects in progress you can check my Github to see what I am currently working on.
         </p>
     </div>

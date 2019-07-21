@@ -15,15 +15,15 @@
         data: function () {
             return {
                 projects: [
-                    { id: 1, picture: require('../../assets/project1.png'), name: 'My Personal Website', content: 'My personal website is a portfolio of all my projects and the knowledge I acquired. I built and designed this website using Vue js, SCSS, JavaScript,  and BEM. You can also check my GitHub to see the source code for all my projects.', href: 'http://elizabethsetton.com/' },
-                    { id: 2, picture: require('../../assets/project3.png'), name: 'Memory Game', content: 'Small memory game with Game of Thrones theme.  I built this game using vanillaJs and CSS. There I practiced my 3D CSS styles and animations. Later on I added mongodb to store the top 10 heights scores to make it more challenging. Try to beat it.', href: 'http://memoryGame.elizabethsetton.com/' },
-                    { id: 3, picture: require('../../assets/project3.png'), name: 'SQL output to JSON', content: 'This tool I created with my husband, he need some quick solution to transform sql code to jason so I build the web design and make it mobile friendly. This is war good opportunity to practice more on my frontend skills.', href: 'http://sqloutputtojson.com/' },
-                    { id: 4, picture: require('../../assets/project3.png'), name: 'Naxter', content: 'This was a project of advance css and sass curse where I practice my grid layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://naxter.elizabethsetton.com/' },
-                    { id: 5, picture: require('../../assets/project3.png'), name: 'Trilo', content: 'This was a project of advance css and sass curse where I practice my flexbox layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://trilo.elizabethsetton.com/' },
-                    { id: 6, picture: require('../../assets/project3.png'), name: 'Natours', content: 'This was a project of advance css and sass curse where I practice my column layout skills. Its mainly visual with little to no backend, but loaded with visual effects to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://natours.elizabethsetton.com/' },
-                    { id: 7, picture: require('../../assets/project3.png'), name: 'Rgba color game', content: 'Small game that displays random rgba color and you have to guess what the right color from 6 card that painted in that random color. Very useful game for practice rgba color code knowledge.', href: 'http://colorGame.elizabethsetton.com/' },
-                    { id: 8, picture: require('../../assets/project3.png'), name: 'Burger Builder', content: 'This website I created along side with react redux curse. There  you can login and then customize your own  burger,  visually you can build it like burger tower, and then you can order it. ', href: 'http://natours.elizabethsetton.com/' },
-                    { id: 9, picture: require('../../assets/project3.png'), name: 'Yelp Camp', content: 'This is my first website that I build along with web developer bootcamp curse. This is a website for camping  where you can login and make post of your camping and all the information of that trip. Other users can comment on your post or upload their own campgrounds.', href: 'http://natours.elizabethsetton.com/' },
+                    { id: 1, picture: require('../../assets/personalWebsite.png'), name: 'My Personal Website', content: 'My personal website is a portfolio of all my projects and the knowledge I have acquired. I built and designed this website using Vue js, SCSS, JavaScript,  and BEM. You can also check my GitHub to see the source code for all my projects.', href: 'http://elizabethsetton.com/', git: 'https://github.com/ElizabethSetton/Resume'},
+                    { id: 2, picture: require('../../assets/memoryGame.png'), name: 'Memory Game', content: 'Small memory game with Game of Thrones theme.  I built this game using vanillaJs and CSS. There I practiced my 3D CSS styles and animations. Later on I added mongodb to store the top 10 high scores to make it more challenging. Try to beat it.', href: 'http://memoryGame.elizabethsetton.com/', git:'https://github.com/ElizabethSetton/memoryGame'},
+                    { id: 3, picture: require('../../assets/sqloutputtojson.png'), name: 'SQL output to JSON', content: 'I created this tool with my husband, he needed a quick solution to transform SQL query output to JSON so I built the web design and made it mobile friendly. This is was a good opportunity to practice my frontend skills.', href: 'http://sqloutputtojson.com/', git: 'https://github.com/ElizabethSetton/SqloutputtoJson'},
+                    { id: 4, picture: require('../../assets/natours.png'), name: 'Natours', content: 'This was a project of advance css and sass course where I practiced my column layout skills. Its mainly visual with little to no backend, but loaded with visual effects and animations to make them look very neat and modern. Later on I learned vue js and decided to add vue to this project for more organized code.', href: 'http://natours.elizabethsetton.com/', git: 'https://github.com/ElizabethSetton/Natours'},
+                    { id: 5, picture: require('../../assets/naxter.png'), name: 'Naxter', content: 'Just like Natours,I built this project in advanced css and sass course. However, in this project I practiced my grid layout skills and later added vue.js', href: 'http://naxter.elizabethsetton.com/', git: 'https://github.com/ElizabethSetton/naxter'},
+                    { id: 6, picture: require('../../assets/trilo.png'), name: 'Trilo', content: 'This was another project of advance css and sass course, but here I have practice my flexbox layout skills. Same like other i added vue.js later.', href: 'http://trilo.elizabethsetton.com/', git: 'https://github.com/ElizabethSetton/trilo'},
+                    { id: 7, picture: require('../../assets/colorGame.png'), name: 'Rgba color game', content: 'Small game that displays random rgba color and you have to guess what is the right color from 6 cards that are painted randomly that painted in that random color. Very useful game for practice rgba color code knowledge.', href: 'http://colorGame.elizabethsetton.com/', git: 'https://github.com/ElizabethSetton/colorGame'},
+                    // { id: 8, picture: require('../../assets/project3.png'), name: 'Burger Builder', content: 'I created this website alongside the react redux course. There You can login to the website, visually customize your burger, and order it.', href: 'http://natours.elizabethsetton.com/', git: 'https://github.com/ElizabethSetton/BurgerBuilder'},
+                    // { id: 9, picture: require('../../assets/project3.png'), name: 'Yelp Camp', content: 'This is my first website that I built along with the web developer bootcamp courese. This is a website for camping  where you can login and make a post of your camping and all the information on that trip. Other users can comment on your post or upload their own campgrounds.', href: 'http://natours.elizabethsetton.com/', git: },
                 ]
             }
         },
@@ -66,6 +66,10 @@
             border-radius: 3%;
             background-color: $color-background;
             box-shadow: $general-box-shadow;
+        }
+        &__project:last-child {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
         }
         &__img {
             width: 100%;
@@ -122,6 +126,8 @@
             grid-template-rows: repeat(5, min-content);
 
             &__project:last-child {
+                grid-column: 1 / 2;
+                grid-row: 5 / 6;
                 transform: translateX(57%);
             }
         
@@ -148,6 +154,8 @@
 
             &__project:last-child {
                 transform: none;
+                grid-column: 1 / 2;
+                grid-row: 7 / 8;
             }
         }
     }    
