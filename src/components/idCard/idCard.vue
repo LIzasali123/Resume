@@ -22,7 +22,7 @@
             </div>
             <div class="idcard__card__icons">
                 <a class="idcard__card__icons__link" href="https://www.facebook.com/profile.php?id=100000319325615"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'facebook-square' }"/></a>
-                <a class="idcard__card__icons__link" href="https://www.linkedin.com/feed/"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
+                <a class="idcard__card__icons__link" href="https://www.linkedin.com/in/elizabeth-setton-8a7261185/"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'linkedin' }" /></a>
                 <a class="idcard__card__icons__link" href="https://github.com/ElizabethSetton"><font-awesome-icon class="idcard__card__icons__font" :icon="{ prefix: 'fab', iconName: 'github-square' }" /></a>
             </div>
         </div>
